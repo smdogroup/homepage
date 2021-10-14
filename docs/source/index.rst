@@ -3,18 +3,57 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to smdohome's documentation!
-====================================
+.. the structure should be as follows:
+   homepage
+     |--People
+     |     |--Principal investigator
+     |     |--Students
+     |           |--...
+     |--Publications
+     |--Projects
+     |--Code
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :hidden:
+   :caption: Homepage
+
+   people
+   publications
+   code
+
+..
+  Below is the content for the welcome page
+
+The SMDO group
+==============
+
+.. image:: images/fancy_topology.png
+  :width: 800 px
+  :align: center
 
 
+Welcome to the website for Professor Graeme Kennedy’s research group in
+the School of Aerospace Engineering at the Georgia Institute of Technology.
+Our group’s research is focused both on the development of new methods 
+for structural and multidisciplinary optimization and the application 
+of these methods to structural and multidisciplinary design problems. 
+We have been working on developing and applying novel design 
+optimization algorithms for:
 
-Indices and tables
-==================
+- Large-scale topology optimization
+- Aeroelastic optimization of flexible aircraft and rotorcraft
+- Optimization of composite structures
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+What's new
+==========
+
+We're migrating the homepage, Stay tuned!
+
+.. 
+  Indices and tables
+  ==================
+
+  * :ref:`genindex`
+  * :ref:`modindex`
+  * :ref:`search`
+
