@@ -23,7 +23,7 @@ fellow at the University of Michigan in the Department of Aerospace
 Engineering. Dr. Kennedy received his PhD from the University of 
 Toronto Institute for Aerospace Studies (UTIAS) in 2012.
 
-Studnets
+Students
 ========
 
 Yicong "Aaron" Fu
