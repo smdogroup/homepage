@@ -1,6 +1,5 @@
 name: deploy gh-pages
 on: [push]
-documentation_path: './doc'
 jobs:
   build:
     runs-on: ubuntu-latest
