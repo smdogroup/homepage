@@ -22,7 +22,7 @@ copyright = '2021, Aaron Fu'
 author = 'Aaron Fu'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.0'
+release = '0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -35,9 +35,12 @@ extensions = [
     "sphinxcontrib.bibtex",    # 3rd-party extension that handles bibtex,
                                # can be installed by: 
                                # $ pip install sphinxcontrib-bibtex
+    "sphinxcontrib.youtube"    # $ pip install sphinxcontrib-youtube
 ]
 
-bibtex_bibfiles = ['bib/2019.bib']
+
+# bibtex settings
+bibtex_bibfiles = ['bib/publications.bib']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -57,11 +60,11 @@ html_theme = 'press'  # install: $ pip install sphinx-press-theme
 
 html_theme_options = {
     "external_links":[
-        ("people", "TODO: add proper link"),
-        ("publications", "TODO: add proper link"),
-        ("projects", "TODO: add proper link"),
-        ("code", "TODO: add proper link"),
-        ("GitHub", "https://github.com/smdogrou"),
+#        ("people", "TODO: add proper link"),
+#        ("publications", "TODO: add proper link"),
+#        ("projects", "TODO: add proper link"),
+#        ("code", "TODO: add proper link"),
+        ("GitHub", "https://github.com/smdogroup"),
     ],
 }
 

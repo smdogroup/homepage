@@ -19,13 +19,14 @@
 
    people
    publications
+   projects
    code
 
 ..
   Below is the content for the welcome page
 
-The SMDO group
-==============
+Homepage
+========
 
 .. image:: images/fancy_topology.png
   :width: 800 px
@@ -46,6 +47,9 @@ optimization algorithms for:
 
 What's new
 ==========
+
+2021/10/15
+----------
 
 We're migrating the homepage, Stay tuned!
 
