@@ -4,3 +4,8 @@ This repo contains the source code for SMDO group's homepage.
 Push to main branch will trigger the auto-deploy to branch gh-pages.
 If everything works properly, you should be able to access the page
 at [https://aaronyicongfu.github.io/smdohome](https://aaronyicongfu.github.io/smdohome).
+
+TODO:
+- Resolve compatibility issues on mobile device
+- Populate page `People`
+- Add latest articles to page `Publications`
