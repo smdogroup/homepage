@@ -43,6 +43,7 @@ high performance computing and GPU computing.
     - `GitHub <https://github.com/aaronyicongfu/>`_
     - `Linkedin <https://www.linkedin.com/in/aaronyicongfu>`_
 
+
 Bao Li, 2020 - present
 ---------------------------------
 
@@ -50,7 +51,7 @@ Bao Li, 2020 - present
    :width: 120 px
    :align: right
 
-Bao Li is a Ph.D. Student in the Aerospace Engineering at the Georgia Institute of Technology. He holds an MS degree in Aerospace Engineering from the University of Michigan. His work focuses on the development of the next-generation electric aircraft using advanced computational optimization methods such as topology optimization and multidisciplinary design optimization. Currently, he is working on the novel thermal structural design, distribution propulsion system, and integrated conceptual design. (Images will update later)
+Bao Li is a Ph.D. Student in the Aerospace Engineering at the Georgia Institute of Technology. He holds an MS degree in Aerospace Engineering from the University of Michigan. His work focuses on the development of the next-generation electric aircraft using advanced computational optimization methods which include topology optimization and multidisciplinary design optimization. Currently, he is working on the novel thermal structural design, distribution propulsion system, and integrated conceptual design for the electric aircraft. (Images will update later)
 
 - External links:
     - `GitHub <https://github.com/12libao/>`_
