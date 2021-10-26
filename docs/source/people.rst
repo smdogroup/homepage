@@ -46,7 +46,7 @@ high performance computing and GPU computing.
 Bao Li, 2020 - present
 ---------------------------------
 
-.. image:: 
+.. image:: images/people/bao.jpg
    :width: 120 px
    :align: right
 
