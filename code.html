@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+      <title>Code</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="prev" title="Research projects" href="projects.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Structures and Multidisciplinary Design Optimization Research Group</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/smdogroup"
+        class="nav-link external">
+          GitHub <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/smdogroup"
+        class="nav-link external">
+          GitHub <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#">Homepage</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="people.html" class="reference internal ">People</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="publications.html" class="reference internal ">Publications</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="projects.html" class="reference internal ">Research projects</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Code</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#tacs" class="reference internal">TACS</a></li>
+                
+                  <li class="toctree-l2"><a href="#paropt" class="reference internal">ParOpt</a></li>
+                
+                  <li class="toctree-l2"><a href="#tmr" class="reference internal">TMR</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Code</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="projects.html"
+       title="previous chapter">← Research projects</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="code">
+<h1>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h1>
+<p>The research codes we have developed are open source and can be found here:</p>
+<section id="tacs">
+<h2>TACS<a class="headerlink" href="#tacs" title="Permalink to this headline">¶</a></h2>
+<p>TACS is our parallel finite-element solver that is suitable for large-cale design applications.
+It is located at: <a class="reference external" href="https://github.com/smdogroup/tacs">https://github.com/smdogroup/tacs</a>.
+The documentation for TACS can be found here: <a class="reference external" href="https://smdogroup.github.io/tacs/">https://smdogroup.github.io/tacs/</a>.</p>
+</section>
+<section id="paropt">
+<h2>ParOpt<a class="headerlink" href="#paropt" title="Permalink to this headline">¶</a></h2>
+<p>ParOpt is our parallel gradient-based optimization toolkit with both interior-point
+and trust region methods. It is located at: <a class="reference external" href="https://github.com/smdogroup/paropt">https://github.com/smdogroup/paropt</a>.
+The documentation for ParOpt can be found here: <a class="reference external" href="https://smdogroup.github.io/paropt/">https://smdogroup.github.io/paropt/</a>.</p>
+</section>
+<section id="tmr">
+<h2>TMR<a class="headerlink" href="#tmr" title="Permalink to this headline">¶</a></h2>
+<p>TMR is our adaptive octree/quadtree mesh generation tool with a CAD-enabled interface
+using OpenCASCADE. It is located at: <a class="reference external" href="https://github.com/smdogroup/tmr">https://github.com/smdogroup/tmr</a>.
+The documentation for TMR can be found here: <a class="reference external" href="https://smdogroup.github.io/tmr/">https://smdogroup.github.io/tmr/</a>.</p>
+</section>
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="projects.html"
+       title="previous chapter">← Research projects</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Aaron Fu.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
