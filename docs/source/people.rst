@@ -50,9 +50,10 @@ Bao Li, 2020 - present
    :width: 120 px
    :align: right
 
-Bao Li is a second-year Ph.D. Student. h 
+Bao Li is a second-year Ph.D. Student. (Images will update later)
 
 - External links:
+    - `GitHub <https://github.com/12libao/>`_
 
 
 
