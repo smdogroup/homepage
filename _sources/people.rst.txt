@@ -43,6 +43,18 @@ high performance computing and GPU computing.
     - `GitHub <https://github.com/aaronyicongfu/>`_
     - `Linkedin <https://www.linkedin.com/in/aaronyicongfu>`_
 
+Bao Li, 2020 - present
+---------------------------------
+
+.. image:: 
+   :width: 120 px
+   :align: right
+
+Bao Li is a second-year Ph.D. Student. 
+
+- External links:
+
+
 
 Previous Students
 =================
