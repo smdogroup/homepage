@@ -34,8 +34,8 @@ Yicong (Aaron) Fu, 2020 - present
    :align: right
 
 Yicong Fu is a second-year Ph.D. Student. Prior to joining the group, he 
-obtained his MS degree from Aerospace Systems Design Laboratory, Georgia Tech,
-and his BS degree from Beihang University (BUAA), China.
+obtained his MS degree from Aerospace Systems Design Laboratory, Georgia Tech in 2020,
+and his BS degree from Beihang University (BUAA), China in 2018.
 His research interests include topology optimization, finite element analysis, 
 high performance computing and GPU computing.
 
