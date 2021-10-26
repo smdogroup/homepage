@@ -50,7 +50,7 @@ Bao Li, 2020 - present
    :width: 120 px
    :align: right
 
-Bao Li is a Ph.D. Student in the Aerospace Engineering at the Georgia Institute of Technology. Bao holds a Master's degree in Aerospace Engineering from the University of Michigan. His Ph.D. work focuses on the combination of topology optimization and multidisciplinary design optimization and applies these computational optimization methods to the development of the next-generation electric aircraft including the novel thermal structural design, distribution propulsion system, and integrated conceptual design. (Images will update later)
+Bao Li is a Ph.D. Student in the Aerospace Engineering at the Georgia Institute of Technology. He holds an MS degree in Aerospace Engineering from the University of Michigan. His work focuses on the development of the next-generation electric aircraft using advanced computational optimization methods such as topology optimization and multidisciplinary design optimization. Currently, he is working on the novel thermal structural design, distribution propulsion system, and integrated conceptual design. (Images will update later)
 
 - External links:
     - `GitHub <https://github.com/12libao/>`_
