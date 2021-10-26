@@ -10,8 +10,8 @@ Dr. Graeme J. Kennedy
 ---------------------
 
 .. image:: images/people/graeme_300px.jpg
-   :width: 160 px
-   :align: left
+   :width: 120 px
+   :align: right
 
 Dr. Graeme J. Kennedy is an associate professor in the Guggenheim School of 
 Aerospace Engineering at the Georgia Institute of Technology where he 
@@ -23,12 +23,27 @@ fellow at the University of Michigan in the Department of Aerospace
 Engineering. Dr. Kennedy received his PhD from the University of 
 Toronto Institute for Aerospace Studies (UTIAS) in 2012.
 
-Students
-========
+Current Students
+================
 
-Yicong "Aaron" Fu
------------------
+Yicong (Aaron) Fu, 2020 - present
+---------------------------------
 
-Intro goes here.
+.. image:: images/people/fyc.jpg
+   :width: 120 px
+   :align: right
 
+Yicong Fu is a second-year Ph.D. Student. Prior to joining the group, he 
+obtained his MS degree from Aerospace Systems Design Laboratory, Georgia Tech,
+and his BS degree from Beihang University (BUAA), China.
+His research interests include topology optimization, finite element analysis, 
+high performance computing and GPU computing.
+
+- External links:
+    - `GitHub <https://github.com/aaronyicongfu/>`_
+    - `Linkedin <https://www.linkedin.com/in/aaronyicongfu>`_
+
+
+Previous Students
+=================
 
