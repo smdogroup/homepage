@@ -57,6 +57,18 @@ Bao Li is a Ph.D. Student in the Aerospace Engineering at the Georgia Institute 
     - `GitHub <https://github.com/12libao/>`_
 
 
+Rohan Patel, 2020 - present
+---------------------------------
+
+.. image:: images/people/Rohan.jpg
+   :width: 120 px
+   :align: right
+
+Rohan Patel is an M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he completed his B.S. as well. His research focuses on incorporating dynamic simulations and impact modeling into the SMDO Group's structural optimization framework. Throughout his three summer internships at Spirit AeroSystems, Rohan has worked on structural analysis and design for numerous aircraft programs including the Airbus A350 and KC-46 Tanker. Rohan hopes to develop more efficient structural optimization tools to accelerate the use of MDO throughout the aerospace industry.
+
+- External links:
+    - `GitHub <https://github.com/rnpatel3/>`_
+    - `Linkedin <https://www.linkedin.com/in/rohan-patel2/>`_
 
 Previous Students
 =================
