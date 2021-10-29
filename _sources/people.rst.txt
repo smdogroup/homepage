@@ -80,8 +80,10 @@ Sean Engelstad, 2021 - present
 Sean Engelstad is a first year M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he 
 received his B.S. in AE as well.  Sean has interned at the Aerospace Corporation the past two summers, working on 
 design curves for unvented sandwich structures, a methodology for the treatment of pressure transients in space systems,
-and machine learning for valve failures in fluid systems.  As a part of the SMDO group, Sean is working on adding
-mesh sensitivity to TACS and Fun2FEM using Engineering Sketch Pad, or ESP/CAPS.
+and machine learning for valve failures in fluid systems.  As a part of the SMDO group, Sean is working on adding 
+mesh sensivitity to the SMDO team's structural optimization software, using Engineering Sketch Pad, ESP/CAPs.  
+With mesh sensivities available, optimized solutions can be parameterized as a function of global or local mesh parameters
+easily.  
 
 - External links:
     - `GitHub <https://github.com/sean-engelstad/>`_
