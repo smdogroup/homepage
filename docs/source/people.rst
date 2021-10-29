@@ -70,6 +70,21 @@ Rohan Patel is a M.S. student in Aerospace Engineering at the Georgia Institute 
     - `GitHub <https://github.com/rnpatel3/>`_
     - `Linkedin <https://www.linkedin.com/in/rohan-patel2/>`_
     
+
+Lenard Halim, 2020 - present
+---------------------------------
+
+.. image:: images/people/Lenard.jpg
+   :width: 120 px
+   :align: right
+
+Lenard Halim is a M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he completed his B.S. in AE as well. Lenard has interned at Sandia National Laboratories and NASA Jet Propulsion Laboratory, where he gained experience in systems and software engineering. Specifically, his experience and research area involves systems design, modeling, and simulation, as well as software development in the realm of multidisciplinary optimization. Within the SMDO group, Lenard has been working on a project sponsored by the Air Force Research Laboratory involving aerothermoelastic analysis via adjoint gradient evaluation.
+
+- External links:
+    - `GitHub <https://github.com/lhalim/>`_
+    - `Linkedin <https://www.linkedin.com/in/lenard-halim-0b21b0128/>`_    
+
+
 Sean Engelstad, 2021 - present
 ---------------------------------
 
