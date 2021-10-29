@@ -69,6 +69,22 @@ Rohan Patel is a M.S. student in Aerospace Engineering at the Georgia Institute 
 - External links:
     - `GitHub <https://github.com/rnpatel3/>`_
     - `Linkedin <https://www.linkedin.com/in/rohan-patel2/>`_
+    
+Sean Engelstad, 2021 - present
+---------------------------------
+
+.. image:: images/people/Sean.jpg
+   :width: 120 px
+   :align: right
+
+Sean Engelstad is a first year M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he 
+received his B.S. in AE as well.  Sean has interned at the Aerospace Corporation the past two summers, working on 
+design curves for unvented sandwich structures, a methodology for the treatment of pressure transients in space systems,
+and machine learning for valve failures in fluid systems.  As a part of the SMDO group, Sean is working on adding
+mesh sensitivity to TACS and Fun2FEM using Engineering Sketch Pad, or ESP/CAPS.
+
+- External links:
+    - `GitHub <https://github.com/sean-engelstad/>`_
 
 Previous Students
 =================
