@@ -106,6 +106,23 @@ easily.
 Previous Students
 =================
 
-- Mark Leader, Ph.D., 2016 - 2021, *current position*
-- 
+Ph.D. Alumni
+------------
+
+- Mark Leader, Ph.D., 2016 - 2021, thesis: *Stress-Based Topology Optimization for Steady-State and Transient Thermoelastic Design*
+- Komahan Boopathy, Ph.D., 2015 - 2020, thesis: *Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties*
+- Adam T. Sidor *(Co-supervised with Prof.Robert Braun)*, Ph.D., 2019, thesis: *Design and Manufacturing of Conformal Ablative Heatshields*
+- Kevin Jacobson *(Co-supervised with Prof. Marilyn Smith)*, Ph.D., 2019, thesis: *Adjoint-Based Aeroelastic Optimization with High-Fidelity Time-Accurate Analysis*
+- Ting Wei Chin, Ph.D., 2019, thesis: *Multi-Physics High Resolution Topology Optimization for Aerospace Structures*
+
+M.S. Alumni
+-----------
+- Liam Smith, 2020
+- Zongxu Dong, 2020
+- Jan F. Kiviaho, 2018
+- Adrien Hervet, 2017
+- Chunrong Ngoh, 2017
+- Maegan Lee, 2016
+- Sui An, 2015
+
 
