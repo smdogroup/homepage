@@ -57,7 +57,72 @@ Bao Li is a Ph.D. Student in the Aerospace Engineering at the Georgia Institute 
     - `GitHub <https://github.com/12libao/>`_
 
 
+Rohan Patel, 2020 - present
+---------------------------------
+
+.. image:: images/people/Rohan.jpg
+   :width: 120 px
+   :align: right
+
+Rohan Patel is a M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he completed his B.S. in AE as well. His research focuses on incorporating dynamic simulations and impact modeling into the SMDO Group's structural optimization framework. Throughout his three summer internships at Spirit AeroSystems, Rohan has worked on structural analysis and design for numerous aircraft programs including the Airbus A350 and KC-46 Tanker. Rohan hopes to develop more efficient structural optimization tools to accelerate the use of MDO throughout the aerospace industry.
+
+- External links:
+    - `GitHub <https://github.com/rnpatel3/>`_
+    - `Linkedin <https://www.linkedin.com/in/rohan-patel2/>`_
+    
+
+Lenard Halim, 2020 - present
+---------------------------------
+
+.. image:: images/people/Lenard.jpg
+   :width: 120 px
+   :align: right
+
+Lenard Halim is a M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he completed his B.S. in AE as well. Lenard has interned at Sandia National Laboratories and NASA Jet Propulsion Laboratory, where he gained experience in systems and software engineering. Specifically, his experience and research area involves systems design, modeling, and simulation, as well as software development in the realm of multidisciplinary optimization. Within the SMDO group, Lenard has been working on a project sponsored by the Air Force Research Laboratory involving aerothermoelastic analysis via adjoint gradient evaluation.
+
+- External links:
+    - `GitHub <https://github.com/lhalim/>`_
+    - `Linkedin <https://www.linkedin.com/in/lenard-halim-0b21b0128/>`_    
+
+
+Sean Engelstad, 2021 - present
+---------------------------------
+
+.. image:: images/people/Sean.jpg
+   :width: 120 px
+   :align: right
+
+Sean Engelstad is a first year M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he 
+received his B.S. in AE as well.  Sean has interned at the Aerospace Corporation the past two summers, working on 
+design curves for unvented sandwich structures, a methodology for the treatment of pressure transients in space systems,
+and machine learning for valve failures in fluid systems.  As a part of the SMDO group, Sean is working on adding 
+mesh sensivitity to the SMDO team's structural optimization software, using Engineering Sketch Pad, ESP/CAPs.  
+With mesh sensivities available, optimized solutions can be parameterized as a function of global or local mesh parameters
+easily.  
+
+- External links:
+    - `GitHub <https://github.com/sean-engelstad/>`_
 
 Previous Students
 =================
+
+Ph.D. Alumni
+------------
+
+- Mark Leader, Ph.D., 2016 - 2021, thesis: *Stress-Based Topology Optimization for Steady-State and Transient Thermoelastic Design*
+- Komahan Boopathy, Ph.D., 2015 - 2020, thesis: *Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties*
+- Adam T. Sidor *(Co-supervised with Prof.Robert Braun)*, Ph.D., 2019, thesis: *Design and Manufacturing of Conformal Ablative Heatshields*
+- Kevin Jacobson *(Co-supervised with Prof. Marilyn Smith)*, Ph.D., 2019, thesis: *Adjoint-Based Aeroelastic Optimization with High-Fidelity Time-Accurate Analysis*
+- Ting Wei Chin, Ph.D., 2019, thesis: *Multi-Physics High Resolution Topology Optimization for Aerospace Structures*
+
+M.S. Alumni
+-----------
+- Liam Smith, 2020
+- Zongxu Dong, 2020
+- Jan F. Kiviaho, 2018
+- Adrien Hervet, 2017
+- Chunrong Ngoh, 2017
+- Maegan Lee, 2016
+- Sui An, 2015
+
 
