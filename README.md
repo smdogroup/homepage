@@ -2,6 +2,11 @@
 
 This repo contains the source code for SMDO group's homepage.
 
+## Access
+The homepage can be accessed at: [smdogroup.github.io/homepage](https://smdogroup.github.io/homepag)
+
+
+
 ## Develop
 The website is currently under development and is offline.
 But there're 2 ways to preview it:
@@ -24,5 +29,4 @@ the ```index.html``` in the root folder.
 
 ## TODO
 - Resolve compatibility issues on mobile device
-- Populate page `People`
-- Add latest articles to page `Publications`
+- Add current positions for alumni
