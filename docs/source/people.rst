@@ -23,6 +23,9 @@ fellow at the University of Michigan in the Department of Aerospace
 Engineering. Dr. Kennedy received his PhD from the University of 
 Toronto Institute for Aerospace Studies (UTIAS) in 2012.
 
+- External links:
+    - `Google Scholar <https://scholar.google.com/citations?user=LHqGhxkAAAAJ&hl>`_
+
 Current Students
 ================
 
