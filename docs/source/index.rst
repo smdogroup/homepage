@@ -12,6 +12,7 @@
      |--Publications
      |--Projects
      |--Code
+     |--Outreach
 
 .. toctree::
    :hidden:
@@ -21,6 +22,7 @@
    publications
    projects
    code
+   outreach
 
 ..
   Below is the content for the welcome page
