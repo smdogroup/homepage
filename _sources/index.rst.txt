@@ -13,6 +13,7 @@
      |--Projects
      |--Code
      |--Outreach
+     |--Blog
 
 .. toctree::
    :hidden:
@@ -23,6 +24,7 @@
    projects
    code
    outreach
+   blog
 
 ..
   Below is the content for the welcome page
