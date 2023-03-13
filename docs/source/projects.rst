@@ -8,6 +8,17 @@ The goal of my research is to develop new MDO methods and techniques for high-fi
 
 Optimization using high-fidelity simulations typically require thousands of times the computational resources of high-fidelity simulations alone. Therefore, developing algorithms that make effective use of HPC resources is essential to obtain results within a 12 to 24 hour time frame that is practical for industrial design applications. Unsteady aeroelastic phenomena are becoming more important in the aircraft design problem as advanced structural materials enable lighter, more flexible aircraft. Developing new design methods to incorporate these design constraints into high-fidelity aircraft optimization problems will maximize the use of both passive and active load alleviation, and avoid costly late-stage design modifications. Composite materials have the potential to enable significant weight savings by giving the design engineer greater freedom to tailor structures to meet stringent design requirements. However, the design of composite structures is often complicated by the addition of manufacturing constraints. These manufacturing constraints place an additional level of complexity on the structural design and are frequently challenging to formulate in a manner compatible with efficient optimization methods. Advances in these areas of high-fidelity simulation-based MDO have the potential to significantly improve the performance of the next generation of aerospace vehicles.
 
+FUNtoFEM
+========
+
+Aerospace vehicles often operate in high-temperature conditions or at high Mach numbers and are subject to both aerodynamic heating and loads. 
+Aerothermoelastic analysis and optimization of these vehicles is required when there is tight coupling between the aerodynamic flow, thermal 
+response of the vehicle and the elastic deformation of the aerodynamic surfaces. In this work, we use the FUNtoFEM framework that is implemented 
+for coupled aerothermoelastic analysis and adjoint- based gradient evaluation. Coupled multidisciplinary design of aerothermoelastic systems using 
+freeform deformation geometry parametrizations does not offer the required flexibility to simultaneously tailor both the internal structural geometry 
+and layout and outer mold line. To address this deficiency, FUNtoFEM is integrated with ESP/CAPS, a differentiable CAD tool with support for 
+multidisciplinary aircraft geometries.
+
 Large-scale topology optimization
 =================================
 
