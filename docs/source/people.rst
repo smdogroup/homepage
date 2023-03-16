@@ -91,6 +91,21 @@ easily.
 
 - External links:
     - `GitHub <https://github.com/sean-engelstad/>`_
+    
+    
+Cameron Smith, 2022 - present
+---------------------------------
+
+.. image:: images/people/Cameron.jpg
+   :width: 120 px
+   :align: right
+   
+Cameron Smith is a first year Ph.D. student in Aerospace Engineering at the Georgia Institute of Technology. Currently, he is working on developing an electric motor model to be used for trajectory and topology optimization, specifically for applications in electric vertical take-off and landing vehicles. Prior to joining Georgia Tech, Cameron received his B.S. in Aerospace Engineering at Rensselaer Polytechnic Institute (RPI). During his time at RPI, Cameron's research focus was in multi-fidelity structural modeing for unmanned aerial vehicles. 
+
+- External links:
+   - `GitHub <https://github.com/csmith763>`_
+   - `Linkedin <https://www.linkedin.com/in/cameron-smith01/>`_
+   
 
 Previous Students
 =================
