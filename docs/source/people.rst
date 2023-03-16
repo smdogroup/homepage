@@ -96,7 +96,7 @@ easily.
 Cameron Smith, 2022 - present
 ---------------------------------
 
-.. image:: images/people/Cameron Smith_headshot.jpg
+.. image:: images/people/Cameron.jpg
    :width: 120 px
    :align: right
    
