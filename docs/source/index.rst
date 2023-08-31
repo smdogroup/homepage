@@ -33,7 +33,7 @@ Home
 ===========
 
 .. image:: images/fancy_topology.png
-  :width: 800 px
+  :width: 100%
   :align: center
 
 

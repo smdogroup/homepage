@@ -9,7 +9,7 @@ The homepage can be accessed at: [smdogroup.github.io/homepage](https://smdogrou
 
 ## Develop
 The website is currently under development and is offline.
-But there're 2 ways to preview it:
+But there are two ways to preview it:
 
 ### 1. Build locally
 If you build for the first time, you'll install several python packages.

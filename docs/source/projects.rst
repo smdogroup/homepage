@@ -25,7 +25,7 @@ generic discipline solvers for future incorporation of new physics or discipline
 
 
 .. image:: images/funtofem-combined-wing.png
-   :width: 800 px
+   :width: 100%
    :align: center
 
 Large-scale topology optimization
@@ -34,13 +34,14 @@ Large-scale topology optimization
 Aerospace vehicles utilize slender, high-aspect ratio structures with small material volume fractions to achieve high stiffness-to-mass and strength-to-mass ratios. Optimization of these structures using topology optimization is challenging due to the demanding mesh requirements and large size of the design problem which scales in proportion to the analysis problem. We have addressed these difficulties by using a scalable framework for analysis and design of large-scale topology and multimaterial optimization problems. This framework includes a multigrid method for solving large structural finite-element problems, and a parallel design optimization framework for solving large-scale optimization problems.
 
 .. youtube:: EOxX892yg5g 
-   :width: 800
+   :width: 100%
+   :align: center
 
 The video above shows the convergence history of a large multimaterial structural optimization problem solved using both parallel analysis and parallel design optimization methods developed by our group. The solution of this large-scale design problem would not be possible within a practical time frame without the efficient use of high-performance parallel computing resources.
 
 
 .. image:: images/project_topology_2.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 To make this design into a physical structural component, we can use additive manufacturing, also known as 3D printing. In this case, we remove the specification of different materials, and concentrate on the manufacturing process with the given geometry. To manufacture the structure, we create a representation of the model that is compatible with additive manufacturing tools. For this purpose, we generate an .stl file in a post processing step from the voxel-based description of the structure used during optimization. More information on the .stl file format can be found here_. After this post-processing step, the part can be manufactured using additive manufacturing techniques. Thanks to Justin Gray for printing this sample part!
@@ -69,7 +70,7 @@ design to match a power profile for a given eVTOL aircraft as part of Georgia Te
 Lift Research Center of Excellence.
 
 .. image:: images/MotorModelN2.png
-   :width: 800 px
+   :width: 100%
    :align: center
 
 To arrive at an optimal electric motor design, the approach that we are employing will utilize 
@@ -84,14 +85,14 @@ electromagnetic model of a radial flux motor and linking this design to the vehi
 within OpenMDAO and Dymos, which are open-source platforms created by the NASA Glenn Research Center. 
 
 .. image:: images/DBM_Traj_ParOpt.png
-   :width: 800 px
+   :width: 100%
    :align: center 
 
 Aeroelastic optimization
 ========================
 
 .. image:: images/project_aeroelastic.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 Advanced materials with greater strength and stiffness enable the use of slender, higher-aspect ratio wings that are aerodynamically favorable but exhibit greater flexibility than conventional wings. Even at an early stage of the design process, it is important to model the effects of wing flexibility using aeroelastic analysis. While dynamic aeroelastic phenomena are often critical in the design of wings, especially in the transonic regime, our focus is often on static aeroelastic analysis, called aerostructural analysis. We utilize detailed structural models that can be used to accurately size the structure for strength and buckling constraints, to predict structural weight, and to compute aerostructural deflections. These detailed structural models often include sophisticated structural design parametrizations for advanced materials. As a result, the full aerostructural design space may have thousands of design variables. To handle these large design problems in an efficient manner, we use gradient-based design optimization methods with an efficient coupled adjoint implementation that can be used to evaluate the derivative with respect to thousands of design variables in a reasonable computational time.
@@ -100,7 +101,7 @@ Optimization of composite structures
 ====================================
 
 .. image:: images/project_composite.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 The parametrization of laminated composite structures for design optimization is a challenging problem. Manufacturing requirements limit the freedom to tailor composite structures to meet demanding performance requirements. Often, these manufacturing requirements are modeled by limiting the allowable ply angles to a discrete set of values. This discrete problem is not, in its most natural form, amenable to gradient-based optimization. On the other hand, methods for nonlinear mixed-integer programming are almost inevitably computationally expensive, especially for large design spaces. In our work, we use laminate parametrizations that take into account the discrete nature of the ply angles. To avoid solving a large, nonlinear, mixed-integer program, we use relaxation methods where the original discrete problem is transformed into a continuous analogue of the original problem. We then obtain solutions to the modified problem using gradient-based optimization.
