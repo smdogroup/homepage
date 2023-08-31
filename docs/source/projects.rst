@@ -48,6 +48,40 @@ To make this design into a physical structural component, we can use additive ma
 
 The objective of this research is to close the gap between methods used to parametrize the structure for design optimization and the manufacturing process itself in order to achieve higher-performance structures that meet all design requirements.
 
+Electric Motor Optimization
+===========================
+The rapid growth of the electric vertical take-off and landing (eVTOL) aircraft industry
+over recent years poses new opportunities for technological advancement in the aerospace field.
+While VTOL vehicles have been present for several decades, introducing electric propulsion into
+their design presents a novel set of challenges that must be addressed. Specific torque, or torque
+per unit motor weight, is regarded as one of the most important technological metrics for the
+application of electric motors to vertical propulsion. Operating an electric motor at its maximum
+peak torque rating, however, is not possible due to thermal constraints inherent to the motor’s
+design. Therefore, it is often necessary to choose heavier motors, which ultimately increases the
+structural mass of the vehicle, to ensure these thermal limits are not exceeded. To reduce the
+mass associated with the electric motors, we are investigating the ability to optimize a motor’s
+design to match a power profile for a given eVTOL aircraft as part of Georgia Tech’s Vertical
+Lift Research Center of Excellence.
+
+To arrive at an optimal electric motor design, the approach that we are employing will utilize 
+both trajectory and topology optimization techniques. By coupling the eVTOL aircraft dynamics 
+and the electromagnetic performance of a given motor design, trajectory optimization can be 
+utilized to obtain optimal sizing specifications for the motor subject to the flight profile 
+and thermal constraints. After preliminary sizing, this information can be provided to a 
+secondary model that will perform topology optimization on the structure with the intent of 
+minimizing the structural mass of the motor without compromising its electromagnetic or 
+thermal performance. Current efforts have focused on constructing an analytical 
+electromagnetic model of a radial flux motor and linking this design to the vehicle dynamics 
+within OpenMDAO and Dymos, which are open-source platforms created by the NASA Glenn Research Center. 
+
+.. image:: images/MotorModelN2.png
+   :width: 200 px
+   :align: center
+
+.. image:: images/DBM_Traj_ParOpt.png
+   :width: 200 px
+   :align: center 
+
 Aeroelastic optimization
 ========================
 
