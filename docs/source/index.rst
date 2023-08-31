@@ -9,8 +9,8 @@
      |     |--Principal investigator
      |     |--Students
      |           |--...
-     |--Publications
      |--Projects
+     |--Publications
      |--Code
      |--Outreach
      |--Blog
@@ -20,8 +20,8 @@
    :caption: Homepage
 
    people
-   publications
    projects
+   publications
    code
    outreach
    blog
@@ -29,8 +29,8 @@
 ..
   Below is the content for the welcome page
 
-Homepage
-========
+Home
+===========
 
 .. image:: images/fancy_topology.png
   :width: 800 px
@@ -47,15 +47,9 @@ optimization algorithms for:
 
 - Large-scale topology optimization
 - Aeroelastic optimization of flexible aircraft and rotorcraft
+- Aerothermoelastic analysis and optimization of aerospace vehicles
+- Electric motor optimization
 - Optimization of composite structures
-
-What's new
-==========
-
-2021/10/15
-----------
-
-We're migrating the homepage, Stay tuned!
 
 .. 
   Indices and tables
