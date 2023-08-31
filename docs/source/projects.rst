@@ -1,5 +1,5 @@
 =================
-Research projects
+Research Projects
 =================
 
 Simulation-based design optimization has the potential to dramatically improve the design of aerospace vehicles over the next decade. Many aerospace vehicles operate under conditions which are governed by multiple disciplines that interact in highly nonlinear ways. For instance, flexible wings that deform under aerodynamic loads are governed simultaneously by both aerodynamics and structural dynamics, two disciplines that must be tightly coupled to obtain the true flying wing shape and, in turn, evaluate the performance of the aircraft. Multidisciplinary design optimization (MDO) methods are designed to address concurrently the difficulty of coupled analysis and integrated design using sophisticated numerical methods. First developed over 20 years ago, MDO techniques have matured significantly over the past decade. Low-fidelity MDO methods are now routinely used by industry in preliminary design optimization however, these tools frequently rely on empirical models that have fundamental limitations. High-fidelity, physics-based simulation can overcome these limitations, but significant research challenges remain to reduce the computational cost and increase the robustness of MDO techniques applied to high-fidelity models.
@@ -11,20 +11,25 @@ Optimization using high-fidelity simulations typically require thousands of time
 FUNtoFEM
 ========
 
-Aerospace vehicles often operate in high-temperature conditions or at high Mach numbers and are subject to both aerodynamic heating and loads. 
-Aerothermoelastic analysis and optimization of these vehicles is required when there is tight coupling between the aerodynamic flow, thermal 
-response of the vehicle and the elastic deformation of the aerodynamic surfaces. In this work, we use the FUNtoFEM framework that is implemented 
-for coupled aerothermoelastic analysis and adjoint- based gradient evaluation. Coupled multidisciplinary design of aerothermoelastic systems using 
-freeform deformation geometry parametrizations does not offer the required flexibility to simultaneously tailor both the internal structural geometry 
-and layout and outer mold line. To address this deficiency, FUNtoFEM is integrated with ESP/CAPS, a differentiable CAD tool with support for 
-multidisciplinary aircraft geometries.
+Fluid-thermal-structural interactions occur in many aerospace applications, with thermal physics becoming especially 
+important at higher speeds and energies. Tight coupling of these physical disciplines can occur in a variety of conditions 
+including rotary wing aircraft, slender wings, and supersonic flight. 
+The FUNtoFEM framework enables the coupling of different discipline-level solvers to not only run 
+multiphysics simulations but to also extract gradients using an adjoint method for use in sensitivity analysis, design, 
+and optimization. 
+
+Recent work has yielded numerous improvements, including the incorporation of differentiable CAD geometry, verification testing, and 
+shape derivatives. Steady-state derivatives are verified to near machine precision. Additionally, a large effort has gone towards
+formalizing the underlying theory and rationale which governs the discipline solver interfaces, solution algorithms, and abstraction of 
+generic discipline solvers for future incorporation of new physics or disciplines.
+
+
+.. image:: images/funtofem-combined-wing.png
+   :width: 800 px
+   :align: center
 
 Large-scale topology optimization
 =================================
-
-.. image:: images/project_topology.png
-   :width: 600 px
-   :align: center
 
 Aerospace vehicles utilize slender, high-aspect ratio structures with small material volume fractions to achieve high stiffness-to-mass and strength-to-mass ratios. Optimization of these structures using topology optimization is challenging due to the demanding mesh requirements and large size of the design problem which scales in proportion to the analysis problem. We have addressed these difficulties by using a scalable framework for analysis and design of large-scale topology and multimaterial optimization problems. This framework includes a multigrid method for solving large structural finite-element problems, and a parallel design optimization framework for solving large-scale optimization problems.
 
@@ -48,7 +53,7 @@ To make this design into a physical structural component, we can use additive ma
 
 The objective of this research is to close the gap between methods used to parametrize the structure for design optimization and the manufacturing process itself in order to achieve higher-performance structures that meet all design requirements.
 
-Electric Motor Optimization
+Electric motor optimization
 ===========================
 The rapid growth of the electric vertical take-off and landing (eVTOL) aircraft industry
 over recent years poses new opportunities for technological advancement in the aerospace field.
@@ -63,6 +68,10 @@ mass associated with the electric motors, we are investigating the ability to op
 design to match a power profile for a given eVTOL aircraft as part of Georgia Tech’s Vertical
 Lift Research Center of Excellence.
 
+.. image:: images/MotorModelN2.png
+   :width: 800 px
+   :align: center
+
 To arrive at an optimal electric motor design, the approach that we are employing will utilize 
 both trajectory and topology optimization techniques. By coupling the eVTOL aircraft dynamics 
 and the electromagnetic performance of a given motor design, trajectory optimization can be 
@@ -74,12 +83,8 @@ thermal performance. Current efforts have focused on constructing an analytical
 electromagnetic model of a radial flux motor and linking this design to the vehicle dynamics 
 within OpenMDAO and Dymos, which are open-source platforms created by the NASA Glenn Research Center. 
 
-.. image:: images/MotorModelN2.png
-   :width: 200 px
-   :align: center
-
 .. image:: images/DBM_Traj_ParOpt.png
-   :width: 200 px
+   :width: 800 px
    :align: center 
 
 Aeroelastic optimization
