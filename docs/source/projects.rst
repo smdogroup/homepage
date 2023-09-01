@@ -110,13 +110,13 @@ Topology Optimization using an Eigenvector Aggregate
 ====================================================
 
 .. image:: images/project_egenagg_tube.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 Topology optimization problems with natural frequency or structural stability criteria often utilize objective or constraint functions computed from the eigenvalues of a generalized eigenvalue problem. However, design formulations involving the eigenvectors are not common, due to both the difficulties that occur in the presence of repeated eigenvalues and the computational cost of computing eigenvector derivatives. To address the formulation problem, a smoothly differentiable function is proposed that is computed based on the eigenvalues and eigenvectors of a generalized eigenvalue problem. This eigenvector aggregate is constructed to approximate a homogeneous quadratic function of the eigenvector associated with the smallest eigenvalue. 
 
 .. image:: images/project_egenagg_square.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 To address the computational cost, a technique is proposed to compute high accuracy approximations of the derivative of the eigenvector aggregate by solving a sequence of related linear systems with a constrained Krylov method that incorporates orthogonal projection. The proposed eigenvector aggregate can be used to impose displacement and stress constraints on the eigenvectors. Results are shown for a tube and 2D topology optimization problems, each with bimodal lowest eigenvalue.
