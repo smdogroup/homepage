@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Structures and Multidisciplinary Design Optimization Research Group'
-copyright = '2021, SMDO Group'
+project = 'SMDO Research Group'
+copyright = '2023, SMDO Group'
 author = 'SMDO Group'
 
 # The full version, including alpha/beta/rc tags
@@ -35,7 +35,8 @@ extensions = [
     "sphinxcontrib.bibtex",    # 3rd-party extension that handles bibtex,
                                # can be installed by: 
                                # $ pip install sphinxcontrib-bibtex
-    "sphinxcontrib.youtube"    # $ pip install sphinxcontrib-youtube
+    "sphinxcontrib.youtube",   # $ pip install sphinxcontrib-youtube
+    "sphinx_tabs.tabs"
 ]
 
 
@@ -50,6 +51,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+sphinx_tabs_disable_tab_closing = True
 
 # -- Options for HTML output -------------------------------------------------
 

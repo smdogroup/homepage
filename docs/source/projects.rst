@@ -1,5 +1,5 @@
 =================
-Research projects
+Research Projects
 =================
 
 Simulation-based design optimization has the potential to dramatically improve the design of aerospace vehicles over the next decade. Many aerospace vehicles operate under conditions which are governed by multiple disciplines that interact in highly nonlinear ways. For instance, flexible wings that deform under aerodynamic loads are governed simultaneously by both aerodynamics and structural dynamics, two disciplines that must be tightly coupled to obtain the true flying wing shape and, in turn, evaluate the performance of the aircraft. Multidisciplinary design optimization (MDO) methods are designed to address concurrently the difficulty of coupled analysis and integrated design using sophisticated numerical methods. First developed over 20 years ago, MDO techniques have matured significantly over the past decade. Low-fidelity MDO methods are now routinely used by industry in preliminary design optimization however, these tools frequently rely on empirical models that have fundamental limitations. High-fidelity, physics-based simulation can overcome these limitations, but significant research challenges remain to reduce the computational cost and increase the robustness of MDO techniques applied to high-fidelity models.
@@ -11,31 +11,37 @@ Optimization using high-fidelity simulations typically require thousands of time
 FUNtoFEM
 ========
 
-Aerospace vehicles often operate in high-temperature conditions or at high Mach numbers and are subject to both aerodynamic heating and loads. 
-Aerothermoelastic analysis and optimization of these vehicles is required when there is tight coupling between the aerodynamic flow, thermal 
-response of the vehicle and the elastic deformation of the aerodynamic surfaces. In this work, we use the FUNtoFEM framework that is implemented 
-for coupled aerothermoelastic analysis and adjoint- based gradient evaluation. Coupled multidisciplinary design of aerothermoelastic systems using 
-freeform deformation geometry parametrizations does not offer the required flexibility to simultaneously tailor both the internal structural geometry 
-and layout and outer mold line. To address this deficiency, FUNtoFEM is integrated with ESP/CAPS, a differentiable CAD tool with support for 
-multidisciplinary aircraft geometries.
+Fluid-thermal-structural interactions occur in many aerospace applications, with thermal physics becoming especially 
+important at higher speeds and energies. Tight coupling of these physical disciplines can occur in a variety of conditions 
+including rotary wing aircraft, slender wings, and supersonic flight. 
+The FUNtoFEM framework enables the coupling of different discipline-level solvers to not only run 
+multiphysics simulations but to also extract gradients using an adjoint method for use in sensitivity analysis, design, 
+and optimization. 
+
+Recent work has yielded numerous improvements, including the incorporation of differentiable CAD geometry, verification testing, and 
+shape derivatives. Steady-state derivatives are verified to near machine precision. Additionally, a large effort has gone towards
+formalizing the underlying theory and rationale which governs the discipline solver interfaces, solution algorithms, and abstraction of 
+generic discipline solvers for future incorporation of new physics or disciplines.
+
+
+.. image:: images/funtofem-combined-wing.png
+   :width: 100%
+   :align: center
 
 Large-scale topology optimization
 =================================
 
-.. image:: images/project_topology.png
-   :width: 600 px
-   :align: center
-
 Aerospace vehicles utilize slender, high-aspect ratio structures with small material volume fractions to achieve high stiffness-to-mass and strength-to-mass ratios. Optimization of these structures using topology optimization is challenging due to the demanding mesh requirements and large size of the design problem which scales in proportion to the analysis problem. We have addressed these difficulties by using a scalable framework for analysis and design of large-scale topology and multimaterial optimization problems. This framework includes a multigrid method for solving large structural finite-element problems, and a parallel design optimization framework for solving large-scale optimization problems.
 
 .. youtube:: EOxX892yg5g 
-   :width: 800
+   :width: 100%
+   :align: center
 
 The video above shows the convergence history of a large multimaterial structural optimization problem solved using both parallel analysis and parallel design optimization methods developed by our group. The solution of this large-scale design problem would not be possible within a practical time frame without the efficient use of high-performance parallel computing resources.
 
 
 .. image:: images/project_topology_2.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 To make this design into a physical structural component, we can use additive manufacturing, also known as 3D printing. In this case, we remove the specification of different materials, and concentrate on the manufacturing process with the given geometry. To manufacture the structure, we create a representation of the model that is compatible with additive manufacturing tools. For this purpose, we generate an .stl file in a post processing step from the voxel-based description of the structure used during optimization. More information on the .stl file format can be found here_. After this post-processing step, the part can be manufactured using additive manufacturing techniques. Thanks to Justin Gray for printing this sample part!
@@ -48,11 +54,45 @@ To make this design into a physical structural component, we can use additive ma
 
 The objective of this research is to close the gap between methods used to parametrize the structure for design optimization and the manufacturing process itself in order to achieve higher-performance structures that meet all design requirements.
 
+Electric motor optimization
+===========================
+The rapid growth of the electric vertical take-off and landing (eVTOL) aircraft industry
+over recent years poses new opportunities for technological advancement in the aerospace field.
+While VTOL vehicles have been present for several decades, introducing electric propulsion into
+their design presents a novel set of challenges that must be addressed. Specific torque, or torque
+per unit motor weight, is regarded as one of the most important technological metrics for the
+application of electric motors to vertical propulsion. Operating an electric motor at its maximum
+peak torque rating, however, is not possible due to thermal constraints inherent to the motor’s
+design. Therefore, it is often necessary to choose heavier motors, which ultimately increases the
+structural mass of the vehicle, to ensure these thermal limits are not exceeded. To reduce the
+mass associated with the electric motors, we are investigating the ability to optimize a motor’s
+design to match a power profile for a given eVTOL aircraft as part of Georgia Tech’s Vertical
+Lift Research Center of Excellence.
+
+.. image:: images/MotorModelN2.png
+   :width: 100%
+   :align: center
+
+To arrive at an optimal electric motor design, the approach that we are employing will utilize 
+both trajectory and topology optimization techniques. By coupling the eVTOL aircraft dynamics 
+and the electromagnetic performance of a given motor design, trajectory optimization can be 
+utilized to obtain optimal sizing specifications for the motor subject to the flight profile 
+and thermal constraints. After preliminary sizing, this information can be provided to a 
+secondary model that will perform topology optimization on the structure with the intent of 
+minimizing the structural mass of the motor without compromising its electromagnetic or 
+thermal performance. Current efforts have focused on constructing an analytical 
+electromagnetic model of a radial flux motor and linking this design to the vehicle dynamics 
+within OpenMDAO and Dymos, which are open-source platforms created by the NASA Glenn Research Center. 
+
+.. image:: images/DBM_Traj_ParOpt.png
+   :width: 100%
+   :align: center 
+
 Aeroelastic optimization
 ========================
 
 .. image:: images/project_aeroelastic.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 Advanced materials with greater strength and stiffness enable the use of slender, higher-aspect ratio wings that are aerodynamically favorable but exhibit greater flexibility than conventional wings. Even at an early stage of the design process, it is important to model the effects of wing flexibility using aeroelastic analysis. While dynamic aeroelastic phenomena are often critical in the design of wings, especially in the transonic regime, our focus is often on static aeroelastic analysis, called aerostructural analysis. We utilize detailed structural models that can be used to accurately size the structure for strength and buckling constraints, to predict structural weight, and to compute aerostructural deflections. These detailed structural models often include sophisticated structural design parametrizations for advanced materials. As a result, the full aerostructural design space may have thousands of design variables. To handle these large design problems in an efficient manner, we use gradient-based design optimization methods with an efficient coupled adjoint implementation that can be used to evaluate the derivative with respect to thousands of design variables in a reasonable computational time.
@@ -61,7 +101,7 @@ Optimization of composite structures
 ====================================
 
 .. image:: images/project_composite.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 The parametrization of laminated composite structures for design optimization is a challenging problem. Manufacturing requirements limit the freedom to tailor composite structures to meet demanding performance requirements. Often, these manufacturing requirements are modeled by limiting the allowable ply angles to a discrete set of values. This discrete problem is not, in its most natural form, amenable to gradient-based optimization. On the other hand, methods for nonlinear mixed-integer programming are almost inevitably computationally expensive, especially for large design spaces. In our work, we use laminate parametrizations that take into account the discrete nature of the ply angles. To avoid solving a large, nonlinear, mixed-integer program, we use relaxation methods where the original discrete problem is transformed into a continuous analogue of the original problem. We then obtain solutions to the modified problem using gradient-based optimization.
@@ -70,13 +110,13 @@ Topology Optimization using an Eigenvector Aggregate
 ====================================================
 
 .. image:: images/project_egenagg_tube.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 Topology optimization problems with natural frequency or structural stability criteria often utilize objective or constraint functions computed from the eigenvalues of a generalized eigenvalue problem. However, design formulations involving the eigenvectors are not common, due to both the difficulties that occur in the presence of repeated eigenvalues and the computational cost of computing eigenvector derivatives. To address the formulation problem, a smoothly differentiable function is proposed that is computed based on the eigenvalues and eigenvectors of a generalized eigenvalue problem. This eigenvector aggregate is constructed to approximate a homogeneous quadratic function of the eigenvector associated with the smallest eigenvalue. 
 
 .. image:: images/project_egenagg_square.png
-   :width: 600 px
+   :width: 80%
    :align: center
 
 To address the computational cost, a technique is proposed to compute high accuracy approximations of the derivative of the eigenvector aggregate by solving a sequence of related linear systems with a constrained Krylov method that incorporates orthogonal projection. The proposed eigenvector aggregate can be used to impose displacement and stress constraints on the eigenvectors. Results are shown for a tube and 2D topology optimization problems, each with bimodal lowest eigenvalue.
