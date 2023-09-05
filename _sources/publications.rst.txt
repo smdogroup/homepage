@@ -3,29 +3,29 @@ Publications
 ============
 
 
-Articles
-========
+.. tabs::
 
-.. bibliography::
-   :list: enumerated
-   :enumtype: arabic
-   :style: unsrt
-   :filter: type % "article"
-   
-Inproceedings
-=============
+   .. tab:: Journal Articles
 
-.. bibliography::
-   :list: enumerated
-   :enumtype: arabic
-   :style: unsrt
-   :filter: type % "inproceedings"
+      .. bibliography::
+         :list: enumerated
+         :enumtype: arabic
+         :style: unsrt
+         :filter: type % "article"
 
-Technical reports
-=================
+   .. tab:: Conference Papers
 
-.. bibliography::
-   :list: enumerated
-   :enumtype: arabic
-   :style: unsrt
-   :filter: type % "techreport"
+      .. bibliography::
+         :list: enumerated
+         :enumtype: arabic
+         :style: unsrt
+         :filter: type % "inproceedings"
+
+   .. tab:: Technical Reports
+
+      .. bibliography::
+         :list: enumerated
+         :enumtype: arabic
+         :style: unsrt
+         :filter: type % "techreport"
+

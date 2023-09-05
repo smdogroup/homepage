@@ -3,7 +3,7 @@ People
 ======
 
 
-Principal investigator
+Principal Investigator
 ======================
 
 Dr. Graeme J. Kennedy
@@ -60,13 +60,18 @@ Bao Li is a Ph.D. candidate in the Aerospace Engineering at the Georgia Institut
     - `GitHub <https://github.com/12libao/>`_
 
 
-Brian Burke, 2021 - present
+Brian J. Burke, 2021 - present
 ---------------------------------
 
-Brian Burke is a Ph.D. candidate in Aerospace Engineering at the Georgia Institute of Technology. He is a member of the 
-development team for FUNtoFEM, the group's interface for coupled aerothermoelastic analysis, design, and optimization. 
+.. image:: images/people/Brian.jpg
+   :width: 120 px
+   :align: right
+
+Brian J. Burke is a Ph.D. candidate in Aerospace Engineering at the Georgia Institute of Technology. He is a member of the 
+development team for FUNtoFEM, the group's interface for coupled aerothermoelastic analysis, design, and optimization. Brian is also leading
+a new project to perform aerostructural analyses and optimizations of truss-braced wings using several levels of fidelity.
 Before coming to Georgia Tech, Brian earned his Bachelors of Science with Honors in Aeronautical and Aeronautical Engineering 
-from Purdue University in 2021. While at Purdue, he conducted research in Prof. Jon Poggie's hypersonics group, with a focus on scramjet unstart.
+from Purdue University in 2021. While at Purdue, he conducted research in Prof. Jonathan Poggie's hypersonics group, with a focus on scramjet unstart.
 
 - External links:
     - `GitHub <https://github.com/bburke38/>`_
@@ -80,7 +85,7 @@ Sean Engelstad, 2021 - present
    :width: 120 px
    :align: right
 
-Sean Engelstad is a second year M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he 
+Sean Engelstad is a Ph.D. student in Aerospace Engineering at the Georgia Institute of Technology, where he 
 received his B.S. in AE as well.  Sean has interned at the Aerospace Corporation the past two summers, working on 
 design curves for unvented sandwich structures, a methodology for the treatment of pressure transients in space systems,
 and machine learning for valve failures in fluid systems.  As a part of the SMDO group, Sean is working on adding 
@@ -100,22 +105,36 @@ Cameron Smith, 2022 - present
    :width: 120 px
    :align: right
    
-Cameron Smith is a first year Ph.D. student in Aerospace Engineering at the Georgia Institute of Technology. Currently, he is working on developing an electric motor model to be used for trajectory and topology optimization, specifically for applications in electric vertical take-off and landing vehicles. Prior to joining Georgia Tech, Cameron received his B.S. in Aerospace Engineering at Rensselaer Polytechnic Institute (RPI). During his time at RPI, Cameron's research focus was in multi-fidelity structural modeing for unmanned aerial vehicles. 
+Cameron Smith is a Ph.D. student in Aerospace Engineering at the Georgia Institute of Technology. 
+Currently, he is working on developing an electric motor model to be used for trajectory and topology optimization, 
+specifically for applications in electric vertical take-off and landing vehicles. Prior to joining Georgia Tech, 
+Cameron received his B.S. in Aerospace Engineering at Rensselaer Polytechnic Institute (RPI). During his time at RPI, 
+Cameron's research focus was in multi-fidelity structural modeing for unmanned aerial vehicles. 
 
 - External links:
    - `GitHub <https://github.com/csmith763>`_
    - `Linkedin <https://www.linkedin.com/in/cameron-smith01/>`_
-   
+
+Lonnie Webb, 2023 - present
+---------------------------
+
+.. image:: images/people/Lonnie.png
+   :width: 120 px
+   :align: right
+
+Lonnie Webb is currently an M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he also earned his B.S. in AE. 
+During an internship at NASA Marshall Space Flight Center, he gained hands-on experience in fatigue and structural analysis of additively manufactured components. 
+His academic and professional interests revolve around structural optimization, structural analysis, and additive manufacturing for aerospace applications.
 
 Previous Students
 =================
 
 Ph.D. Alumni
 ------------
-
+- James Gloyd, Ph.D., 2019 - 2023, thesis: *Mechanical Metamaterial Lattices via Direct Methods*
 - Mark Leader, Ph.D., 2016 - 2021, thesis: *Stress-Based Topology Optimization for Steady-State and Transient Thermoelastic Design*
 - Komahan Boopathy, Ph.D., 2015 - 2020, thesis: *Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties*
-- Adam T. Sidor *(Co-supervised with Prof.Robert Braun)*, Ph.D., 2019, thesis: *Design and Manufacturing of Conformal Ablative Heatshields*
+- Adam T. Sidor *(Co-supervised with Prof. Robert Braun)*, Ph.D., 2019, thesis: *Design and Manufacturing of Conformal Ablative Heatshields*
 - Kevin Jacobson *(Co-supervised with Prof. Marilyn Smith)*, Ph.D., 2019, thesis: *Adjoint-Based Aeroelastic Optimization with High-Fidelity Time-Accurate Analysis*
 - Ting Wei Chin, Ph.D., 2019, thesis: *Multi-Physics High Resolution Topology Optimization for Aerospace Structures*
 
