@@ -41,7 +41,7 @@ Thinking about your own actions to get to school in the morning, the amount of t
 
 Let’s  represent these design variables as :math:`x`, which is an array that contains all of the design variables in the problem. Now, the objective function can be rewritten as shown below.
 
-.. figure:: images/ObjectiveFunctions/2_ObjFuncDVs.svg
+.. figure:: images/ObjectiveFunctions/2_ObjFuncDVs_v2.svg
    :figwidth: 100 %
    :scale: 20 %
    :alt: objective function, which is influenced by the design variables, for example problem
