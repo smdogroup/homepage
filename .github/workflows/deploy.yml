@@ -11,6 +11,7 @@ on:
         required: false
         default: false
 permissions:
+  contents: write
   pages: write
 jobs:
   build:
