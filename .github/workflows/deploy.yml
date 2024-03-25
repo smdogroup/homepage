@@ -4,6 +4,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Install Dependencies
+      run: |
+        pip install sphinx-design
     - name: Checkout
       uses: actions/checkout@master
       with:
