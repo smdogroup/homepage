@@ -1,3 +1,5 @@
 docs/build
 *.swp
-docs/source/images/people/.DS_Store
+.DS_Store
+
+*.db
