@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'SMDO Research Group'
-copyright = '2023, SMDO Group'
-author = 'SMDO Group'
+project = "SMDO Research Group"
+copyright = "2023, SMDO Group"
+author = "SMDO Group"
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = "0.0.1"
 
 
 # -- General configuration ---------------------------------------------------
@@ -30,22 +30,26 @@ release = '0.0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+
+# fmt: off
 extensions = [
     "sphinx.ext.githubpages",  # publish HTML docs in github pages
     "sphinxcontrib.bibtex",    # 3rd-party extension that handles bibtex,
-                               # can be installed by: 
+                               # can be installed by:
                                # $ pip install sphinxcontrib-bibtex
     "sphinxcontrib.youtube",   # $ pip install sphinxcontrib-youtube
     "sphinx_tabs.tabs",
-    "sphinx_design"
+    "sphinx_design",
+    "jupyterlite_sphinx"
 ]
+# fmt: on
 
 
 # bibtex settings
-bibtex_bibfiles = ['bib/publications.bib']
+bibtex_bibfiles = ["bib/publications.bib"]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -59,14 +63,14 @@ sphinx_tabs_disable_tab_closing = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'press'  # install: $ pip install sphinx-press-theme
+html_theme = "press"  # install: $ pip install sphinx-press-theme
 
 html_theme_options = {
-    "external_links":[
-#        ("people", "TODO: add proper link"),
-#        ("publications", "TODO: add proper link"),
-#        ("projects", "TODO: add proper link"),
-#        ("code", "TODO: add proper link"),
+    "external_links": [
+        #        ("people", "TODO: add proper link"),
+        #        ("publications", "TODO: add proper link"),
+        #        ("projects", "TODO: add proper link"),
+        #        ("code", "TODO: add proper link"),
         ("GitHub", "https://github.com/smdogroup"),
     ],
 }
@@ -77,8 +81,6 @@ html_theme_options = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
-html_css_files =[
-    'css/outreach_styles.css'
-]
+html_css_files = ["css/outreach_styles.css"]
