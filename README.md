@@ -17,7 +17,7 @@ If you build for the first time, you'll need to install several python packages:
 ```cd docs/source && pip install -r requirements.txt```
 Then you can run ```cd docs && ./compile.sh``` to build the website.
 If it runs through, host it locally
-```python -m http.server build/html```
+```python -m http.server -d build/html```
 then visit
 ```localhost:8000/```
 in your browser to preview the website locally.
