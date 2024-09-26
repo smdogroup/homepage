@@ -1,5 +1,5 @@
 docs/build
 *.swp
 .DS_Store
-
 *.db
+.vscode
