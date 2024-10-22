@@ -36,3 +36,4 @@ in your browser to preview the website locally.
 ## TODO
 - Resolve compatibility issues on mobile device
 - Add current positions for alumni
+- Seiyon's profile
