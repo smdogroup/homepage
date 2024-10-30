@@ -19,19 +19,21 @@ python code live!
     OutreachBlogPosts/python
 
 
-Below is an example Geogebra applet:
-
-Geogebra demo:
-`````````````
-
-.. raw:: html
-
-    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
-    <script>
-    var params = {material_id: "zngqcxeb", "width": 800, "height": 600, "showToolBar": false};
-    var applet = new GGBApplet(params, true);
-    window.addEventListener("load", function() {
-        applet.inject('ggb-element');
-    });
-    </script>
-    <div id="ggb-element"></div>
+.. The geogebra applet does not work with press theme due to a conflict on js
+.. level, we need to either fix the bug or switch to a different theme.
+.. Below is an example Geogebra applet:
+..
+.. Geogebra demo:
+.. `````````````
+..
+.. .. raw:: html
+..
+..     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+..     <script>
+..     var params = {material_id: "zngqcxeb", "width": 800, "height": 600, "showToolBar": false};
+..     var applet = new GGBApplet(params, true);
+..     window.addEventListener("load", function() {
+..         applet.inject('ggb-element');
+..     });
+..     </script>
+..     <div id="ggb-element"></div>
