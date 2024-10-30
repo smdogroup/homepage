@@ -37,9 +37,10 @@ jobs:
         mkdir external
         cd external
         git clone https://github.com/smdogroup/sphinxcontrib-geogebra.git
+        cd sphinxcontrib-geogebra
         python setup.py build
         python setup.py install --user
-        cd ..
+        cd ../..
         conda --version
         mamba --version
         empack --version
