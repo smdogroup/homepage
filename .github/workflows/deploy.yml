@@ -34,6 +34,13 @@ jobs:
         conda install mamba=1.5.10 -c conda-forge
         conda install libmamba -c conda-forge
         pip install -r docs/source/requirements.txt
+        mkdir external
+        cd external
+        git clone https://github.com/edbook/sphinxcontrib-geogebra.git
+        git checkout 9e2d8b4
+        python setup.py build
+        python setup.py install --user
+        cd ..
         conda --version
         mamba --version
         empack --version
