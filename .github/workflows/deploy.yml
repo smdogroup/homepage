@@ -36,8 +36,7 @@ jobs:
         pip install -r docs/source/requirements.txt
         mkdir external
         cd external
-        git clone https://github.com/edbook/sphinxcontrib-geogebra.git
-        git checkout 9e2d8b4
+        git clone https://github.com/smdogroup/sphinxcontrib-geogebra.git
         python setup.py build
         python setup.py install --user
         cd ..
