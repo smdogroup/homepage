@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>Objective Functions</title>
+    
+          <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="../https://fonts.googleapis.com/css?family=Vibur" type="text/css" />
+          <link rel="stylesheet" href="../_static/jupyterlite_sphinx.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/sphinx-design.min.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/css/outreach_styles.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/css/outreach_styles.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=9bcbadda"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
+        <script src="../_static/design-tabs.js?v=f930bc37"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="../_static/theme-vendors.js"></script> -->
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Python" href="python.html" />
+  <link rel="prev" title="History of Optimization" href="history.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <span class="site-name">SMDO Research Group</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/smdogroup"
+        class="nav-link external">
+          GitHub <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/smdogroup"
+        class="nav-link external">
+          GitHub <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#">Homepage</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../people.html" class="reference internal ">People</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../projects.html" class="reference internal ">Research Projects</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../publications.html" class="reference internal ">Publications</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../code.html" class="reference internal ">Code</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../outreach.html" class="reference internal ">Outreach</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../blog.html" class="reference internal ">SMDO Blog</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="../outreach.html">Outreach</a> &raquo;</li>
+    
+    <li>Objective Functions</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="history.html"
+       title="previous chapter">← History of Optimization</a>
+  </li>
+  <li class="next">
+    <a href="python.html"
+       title="next chapter">Python →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="objective-functions">
+<h1>Objective Functions<a class="headerlink" href="#objective-functions" title="Link to this heading">¶</a></h1>
+<p>Now that you have an introduction to optimization and have learned some of the key history behind its development, let’s discuss one of the most important pieces of any optimization problem: the <span class="boldblue">objective function</span>.</p>
+<p>No matter the discipline or field, an objective function is a core component of every optimization problem. <span class="boldblue">Qualitatively, one way to think of an objective function is that it is a goal or a target that you are trying to achieve</span>.</p>
+<p>Let’s start  with a simple  example to give a clearer idea as to what an objective function is. Consider this scenario: it’s Monday morning, and the school day starts at 8 AM. Your goal, or objective, is to make it to school on time! This is an example of a <span class="boldblue">Boolean objective</span> because there are two ways to answer the question about whether you made it to school on time: <em>true</em> or <em>false</em>.</p>
+<p>While making it to school on time is important, this scenario can be reframed to further illustrate some additional optimization principles.  Another way to think about the commute to school is that you want to take as little time as possible in the morning from when you wake up until you arrive at school. Then, this allows you to sleep longer in the morning to make sure you are well rested for all your classes.</p>
+<p>In this new scenario, the goal, or objective function, is the total amount of time that it takes to get to school, and this is the quantity to minimize. This is an example of a <span class="boldblue">continuous objective</span> since the time it takes to get to school is contained within a range of different values.</p>
+<p>The trip to school will often take between 30 minutes to 1 hour, but it could take longer or shorter depending on traffic and other factors. Without adding any <span class="boldblue">constraints</span>, which places limits on quantities of interest like the time it takes to get to school, there is technically no limit to how short of a time it takes you to get to school, but this would also require you to invent teleportation or stop time! While we are not focused on constraints here, you can learn more about constraints and their role in optimization in the next section.</p>
+<p>Most often in numerical optimization, the objective function is created in such a way that it is a quantitative value or number that can be minimized. This is the convention in optimization, but one can easily maximize a function using the same techniques by minimizing the negative of the function.</p>
+<p>Going back to our second example, where we want to minimize the total time it takes to get to school, let’s introduce some mathematical terminology for how to represent objective functions in optimization.</p>
+<p>Here, <span class="math notranslate nohighlight">\(T\)</span> represents the function that determines how much time it takes to get to school once you wake up.</p>
+<figure class="align-center" id="id1" style="width: 100%">
+<a class="reference internal image-reference" href="../_images/1_ObjFuncs.svg"><img alt="objective function for example problem" src="../_images/1_ObjFuncs.svg" style="width: 632.0px; height: 69.60000000000001px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Objective Function for Example Problem</span></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+<p>Thinking about your own actions to get to school in the morning, the amount of time is dependent on, or a function of, factors like the mode of transportation you take, what you are going to make for breakfast, and whether you picked out an outfit the night before. These things are called the <span class="boldblue">design variables</span> for your problem, and they directly influence the amount of time it takes to get to school.</p>
+<p>Let’s  represent these design variables as <span class="math notranslate nohighlight">\(x\)</span>, which is an array that contains all of the design variables in the problem. Now, the objective function can be rewritten as shown below.</p>
+<figure class="align-center" id="id2" style="width: 100%">
+<a class="reference internal image-reference" href="../_images/2_ObjFuncDVs.svg"><img alt="objective function, which is influenced by the design variables, for example problem" src="../_images/2_ObjFuncDVs.svg" style="width: 815.8000000000001px; height: 165.20000000000002px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Objective Function as Influenced by the Design variables for Example Problem</span></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+<p>Finally, since we want to minimize the total time it takes to get to school, the objective function and optimization statement are officially written as:</p>
+<figure class="align-center" id="id3" style="width: 100%">
+<a class="reference internal image-reference" href="../_images/3_OptStatement.svg"><img alt="optimization statement for example problem" src="../_images/3_OptStatement.svg" style="width: 732.9px; height: 165.15px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Optimization Statement for Example Problem</span></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+<p>From a notation point of view, the <span class="math notranslate nohighlight">\(x\)</span> below the word “min” means that we are changing the design variables to minimize our objective function of interest.</p>
+<p>Now that we have defined the problem, consider three design variables that influence the amount of time it takes to get to school: what to cook for breakfast, whether an outfit was picked out the night before, and the mode of transportation to get to school. For simplicity, each set of design variables will be denoted by the predetermined options inside the curly braces {}. Next to each choice in the set, the number of minutes that each option adds to the objective function is given.</p>
+<figure class="align-center" id="id4" style="width: 100%">
+<a class="reference internal image-reference" href="../_images/4_Choices.svg"><img alt="design variable choices for example problem" src="../_images/4_Choices.svg" style="width: 734.55px; height: 298.05px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Design Variables for Example Problem</span></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+<p>Using these sets of design variables, we can choose a couple of combinations to consider the total amount of time it takes to get to school.</p>
+<figure class="align-center" id="id5" style="width: 100%">
+<a class="reference internal image-reference" href="../_images/5_SampleChoices.svg"><img alt="a couple of design variable choices for example problem" src="../_images/5_SampleChoices.svg" style="width: 759.6px; height: 118.94999999999999px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Sample Design Variable Choices for Example Problem</span></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+<p>From these two choices, Choice 1 is better than Choice 2 since it is six minutes faster! However, while Choice 1 is the shortest of these two options, is it truly the best? Can you find a better choice using the sets above? Click the drop down to see the answer for this example.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-question" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.756 2.756 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6.24 6.24 0 0 0-.26.16.952.952 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661.103-.067.207-.132.313-.195l.007-.004c.1-.061.182-.11.258-.161a.969.969 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.612.612 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1.01 1.01 0 0 0-.34.398ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg></span><span class="sd-summary-text">What is the optimal choice of design variables for this example?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Looking back at the design variable sets above, it is apparent that a choice can be made that results in a shorter amount of time than Choices 1 and 2. With this choice for the design variables, the total amount of time it would take to get to school is 13 minutes, which is the optimal time in this scenario!</p>
+<figure class="align-center" id="id6" style="width: 100%">
+<a class="reference internal image-reference" href="../_images/6_OptimalChoice.svg"><img alt="optimal choice of design variables for example problem" src="../_images/6_OptimalChoice.svg" style="width: 747.6px; height: 49.199999999999996px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Optimal Design Variable Choice for Example Problem</span></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+</div>
+</details><p>In this simple example, since each choice does not influence the others at all, the minimum amount of time can be determined by minimizing each contribution in the three sets above. If another design variable were added to the problem, such as exercising in the morning, then minimizing the time associated with this choice and adding it to the time from the optimal set above would still minimize the problem. <em>In more complicated, realistic applications, the design variables and their impact on the objective function might be coupled, so it may be difficult to say by observation what is in the optimum set</em>. To learn how to solve these more complicated and general problems, keep reading the sections ahead!</p>
+<section id="key-takeaways">
+<h2>Key Takeaways:<a class="headerlink" href="#key-takeaways" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>An objective function can be thought of as a target or goal that you are trying to achieve, and quantitatively it is a number that we want to minimize</p></li>
+<li><p>There are different types of objective functions, and the objective that you choose is dependent on your problem</p></li>
+<li><p>Design variables are quantities or choices that you can make that influence the value of your objective function</p></li>
+</ul>
+</section>
+<section id="definitions">
+<h2>Definitions:<a class="headerlink" href="#definitions" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Objective function: the mathematical function that you are trying to minimize (or maximize)</p></li>
+<li><p>Constraints: limits on quantities of interest, such as design variables or objective function values (see next section for more details)</p></li>
+<li><p>Design variables: choices you make for factors that directly influence the value of the objective function</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="history.html"
+       title="previous chapter">← History of Optimization</a>
+  </li>
+  <li class="next">
+    <a href="python.html"
+       title="next chapter">Python →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2023, SMDO Group.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.1.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.9.1.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
