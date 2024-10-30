@@ -44,11 +44,15 @@ jobs:
       with:
         path: './docs/build/html'
 
-    - name: Push artifact to gh-pages branch
-      run: |
-        pwd
-        && cd ./docs/build/html
-        && pwd
+    - name: Push artifact to pages-artifact branch
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: pages-artifact
+        FOLDER: './docs/build/html'
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        MESSAGE: "Build: ({sha}) {msg}" # The commit message
+
 
   deploy:
     needs: build
