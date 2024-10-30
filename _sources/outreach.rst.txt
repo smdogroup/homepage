@@ -18,4 +18,20 @@ python code live!
 
     OutreachBlogPosts/python
 
-Added some text here.
+
+Below is an example Geogebra applet:
+
+Geogebra demo:
+`````````````
+
+.. raw:: html
+
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script>
+    var params = {material_id: "zngqcxeb", "width": 800, "height": 600, "showToolBar": false};
+    var applet = new GGBApplet(params, true);
+    window.addEventListener("load", function() {
+        applet.inject('ggb-element');
+    });
+    </script>
+    <div id="ggb-element"></div>
