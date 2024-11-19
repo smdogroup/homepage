@@ -9,7 +9,8 @@ Here is the start of the outreach page.
 
     OutreachBlogPosts/history
     OutreachBlogPosts/objective
-
+    OutreachBlogPosts/formulating
+    
 Here is an in-browser python environment where you can test your favorate
 python code live!
 
