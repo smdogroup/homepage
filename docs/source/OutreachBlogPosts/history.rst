@@ -54,9 +54,9 @@ Today, optimization is used in a variety of fields from economics to mathematics
 If you’d like to learn more about current techniques and applications of optimization, feel free to explore the other sections of this website to learn more. 
 
 
-   .. figure:: images/Timeline/Timeline.svg
+   .. figure:: images/Timeline/Timeline.png
       :figwidth: 100 %
-      :scale: 100 %
+      :scale: 70 %
       :alt: optimal choice of design variables for example problem
       :align: center
 
