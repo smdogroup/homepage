@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>Formulating an Optimization Problem</title>
+    
+          <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="../https://fonts.googleapis.com/css?family=Vibur" type="text/css" />
+          <link rel="stylesheet" href="../_static/jupyterlite_sphinx.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/sphinx-design.min.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/css/outreach_styles.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/css/outreach_styles.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=9bcbadda"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
+        <script src="../_static/design-tabs.js?v=f930bc37"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="../_static/theme-vendors.js"></script> -->
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Python" href="python.html" />
+  <link rel="prev" title="Objective Functions" href="objective.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <span class="site-name">SMDO Research Group</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/smdogroup"
+        class="nav-link external">
+          GitHub <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+  
+    <div class="nav-item">
+      <a href="https://github.com/smdogroup"
+        class="nav-link external">
+          GitHub <outboundlink></outboundlink>
+      </a>
+    </div>
+  
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#">Homepage</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../people.html" class="reference internal ">People</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../projects.html" class="reference internal ">Research Projects</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../publications.html" class="reference internal ">Publications</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../code.html" class="reference internal ">Code</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../outreach.html" class="reference internal ">Outreach</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../blog.html" class="reference internal ">SMDO Blog</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="../outreach.html">Outreach</a> &raquo;</li>
+    
+    <li>Formulating an Optimization Problem</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="objective.html"
+       title="previous chapter">← Objective Functions</a>
+  </li>
+  <li class="next">
+    <a href="python.html"
+       title="next chapter">Python →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="formulating-an-optimization-problem">
+<h1>Formulating an Optimization Problem<a class="headerlink" href="#formulating-an-optimization-problem" title="Link to this heading">¶</a></h1>
+<section id="general-procedure">
+<h2>General Procedure<a class="headerlink" href="#general-procedure" title="Link to this heading">¶</a></h2>
+<p>Now that you have been introduced to <span class="boldblue">objective functions</span>, <span class="boldblue">design variables</span>, and <span class="boldblue">constraints</span> in detail, the next step is understanding how to combine these concepts to create an optimization problem. First, recall these three key definitions:</p>
+<ul class="simple">
+<li><p>Objective function: the mathematical function to be minimized (or maximized)</p></li>
+<li><p>Constraints: limits on design variables and other quantities of interest</p></li>
+<li><p>Design variables: choices that directly influence the value of the objective function</p></li>
+</ul>
+<p><span class="boldblue">It is important to note that there is more than one way to go about formulating an optimization problem</span>. However, here we are going to provide one approach that can serve as a guide while you are getting started.</p>
+<p>Broadly, the major steps in formulating an optimization problem are listed below.</p>
+<figure class="align-center" id="id1" style="width: 100%">
+<img alt="template for formulating an optimization problem" src="../_images/1_OptProblemSteps.svg" />
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Template for Formulating an Optimization Problem</span></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-light-bulb" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg></span><span class="sd-summary-text">Key Idea: What if I have more than one quantity that contributes to my objective function?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">For now, we are only going to focus on optimization problems with a single objective function, but there are techniques for performing <span class="boldblue">multi-objective optimization</span>. For <span class="boldblue">single-objective optimization</span>, the objective function we define can be quantified by an individual scalar value. The topic of multi-objective optimization is bit more advanced and will be discussed in a future section.</p>
+</div>
+</details><p>One way to assist with the process of formulating an optimization problem is with an <span class="boldblue">eXtended Design Structure Matrix (XDSM) diagram</span>! This is a tool that helps illustrate the flow of information between different parts of your problem. To understand how this diagram works, consider the example below that highlights the different components.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/2_XDSMDescription_v2.png"><img alt="example of an XDSM diagram" src="../_images/2_XDSMDescription_v2.png" style="width: 620.9000000000001px; height: 254.35000000000002px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Example eXtended Design Strucutre Matrix (XDSM) Diagram</span></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+<p>This is a generic optimization problem to describe the basic concepts of an XDSM diagram. The rectangular components along the main diagonal with the green backgrounds represent the main analysis blocks within the system. Within these analyses, outputs of interest, such as the objective function, are computed given some inputs. Inputs to each analysis block are depicted with vertical, grey lines, and this is true whether the input is above or below the analysis block. The inputs to each discipline can either be outputs from another discipline or fixed inputs to the system. For example, <span class="analysisgreen">Analysis Block 2</span> has two inputs: <span class="math notranslate nohighlight">\(y_1\)</span>, which is an output from <span class="analysisgreen">Analysis Block 1</span>, and <span class="math notranslate nohighlight">\(c_2\)</span>, a fixed input to the system. All the outputs of a given analysis block are connected by horizontal, grey lines, and here the outputs are <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span>. The analysis procedure for this system consists of the <span class="analysisgreen">green</span> blocks, but an <span class="optblue">Optimizer</span>, shown with a <span class="optblue">blue</span> oval, exists at the top-level of the model. The <span class="optblue">Optimizer</span> controls the design variables for the system, <span class="math notranslate nohighlight">\(x\)</span>, which are provided as inputs in this example to the first analysis block. After performing the analysis for a given set of design variables, the outputs of interest are provided back to the <span class="optblue">Optimizer</span>, which updates the design variables in a manner to improve the objective function. The process for the optimization is depicted in the XDSM diagram with the black arrow, which further indicates the key steps in the optimization procedure. Once the <span class="optblue">Optimizer</span> converges to a solution, it returns the optimal output values, <span class="math notranslate nohighlight">\(y_1^\ast,\ y_2^\ast\)</span>, and the optimal design variables, <span class="math notranslate nohighlight">\(x^\ast\)</span>, which are all indicated with a “star”.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-light-bulb" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg></span><span class="sd-summary-text">Key Idea: what’s the difference between inputs above and below analysis blocks?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If the input is below the analysis block, then this indicates that there is an implicit relationship between these two disciplines, which means that an input to this discipline is computed later or downstream of the current discipline. These implicit inputs have to be determined by implementing some solver procedure or continuously iterating until the value no longer changes.</p>
+</div>
+</details></section>
+<section id="real-world-applications">
+<h2>Real-world Applications<a class="headerlink" href="#real-world-applications" title="Link to this heading">¶</a></h2>
+<p>Now that the procedure for formulating an optimization problem has been introduced and you understand the basics, you may be wondering how optimization can be used for real-world applications. Here are a few examples of how optimization has been used in a variety of disciplines.</p>
+<section id="rocket-to-international-space-station">
+<h3>Rocket to International Space Station<a class="headerlink" href="#rocket-to-international-space-station" title="Link to this heading">¶</a></h3>
+<figure class="align-center" id="id3" style="width: 100%">
+<img alt="SpaceX Dragon capsule docking with the International Space Station" src="../_images/3_DragonDocking.svg" />
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">SpaceX Dragon Capsule Docking with the International Space Station (Credit - SpaceX/NASA)</span></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Consider that you are an engineer working for a space company tasked with designing a new rocket to carry cargo, such as food and science experiments, to the International Space Station (ISS). Launching rockets and sending supplies to the ISS is expensive, so as an engineer your objective is to maximize the cargo weight that you can carry for a single mission. There are also some constraints that you will have to consider, such as a minimum value possible for the volume that the cargo occupies on the rocket and the efficiency of the fuel that is used. Then, if you are working on designing the space capsule, the design variables, <span class="math notranslate nohighlight">\(x\)</span>, that you may have control over include the shape of the capsule and some of the materials used. This forms the core of your optimization problem for maximizing the cargo sent to the ISS! Mathematically, this might be represented as the following, where the vertical dots indicate that there are other constraints that could be considered.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/4_OptRocketStatement.svg"><img alt="Optimization statement for rocket example" src="../_images/4_OptRocketStatement.svg" style="width: 453.20000000000005px; height: 165.0px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Optimization Statement for Example Problem on  Rocket Design</span></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="grocery-store-pricing">
+<h3>Grocery Store Pricing<a class="headerlink" href="#grocery-store-pricing" title="Link to this heading">¶</a></h3>
+<figure class="align-center" id="id5" style="width: 100%">
+<img alt="Sample supply and demand curves" src="../_images/5_SupplyDemand.svg" />
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Sample Supply and Demand Curves for Grocery Store Pricing</span></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Now imagine that you are at the grocery store shopping for your favorite snacks. Have you ever thought about how the prices are set for what you buy? From the supermarket operations side, the task of setting the prices for grocery store items is an optimization problem. As a company, one objective might be to maximize profit, which is the total amount of money made minus expenses. One way to do this is to make all the items expensive to increase the profit margin. However, if this is done, you, as a shopper, would go to another store to buy your snacks. So, a constraint that must be satisfied is that the prices set must be be less than or equal to those of a competing store. Keeping this constraint among others in mind, the grocery store controls the prices of their goods, which are their design variables. In economics, this problem is often thought about in terms of supply and demand curves, where the optimal point is the intersection of the two curves!</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/6_OptGroceriesStatement.svg"><img alt="Optimization statement for grocery store pricing example" src="../_images/6_OptGroceriesStatement.svg" style="width: 564.8000000000001px; height: 80.0px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Optimization Statement for Example Problem on Grocery Store Pricing</span></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="traffic-junction-design">
+<h3>Traffic Junction Design<a class="headerlink" href="#traffic-junction-design" title="Link to this heading">¶</a></h3>
+<figure class="align-center" id="id7" style="width: 100%">
+<a class="reference internal image-reference" href="../_images/7_GoldenGate.svg"><img alt="Golden Gate bridge in San Francisco" src="../_images/7_GoldenGate.svg" style="width: 452.0px; height: 296.5px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Golden Gate Bridge in San Francisco</span></span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>One final example to consider is that you are a civil engineer trying to design a new traffic junction over a river. Since the vehicles must travel over water, you need to design a bridge with the objective of maximizing traffic flow. While adding many lanes would help with traffic flow, you have a strict budget, or monetary constraint. Additionally, you must ensure that the bridge is capable of holding a minimum weight in case there is a traffic jam. This adds an additional structural constraint where the load of the cars on the bridge must be less than or equal to a maximum allowable load. Your design variables in this instance would then be the number of lanes, the geometry of the bridge, and the materials that you use. If you have ever heard of the video game Poly Bridge, this concept might sound familiar!</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/8_OptBridgeStatement.svg"><img alt="Optimization statement for traffic junction example" src="../_images/8_OptBridgeStatement.svg" style="width: 277.9px; height: 118.99999999999999px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><span class="captiontext">Optimization Statement for Example Problem on Traffic Junction Design</span></span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+<div class="legend">
+</div>
+</figcaption>
+</figure>
+<p>To learn more about how to perform optimization on your own numerical problems and utilize the concepts you have learned in this introductory section, keep reading the following sections to see optimization in action!</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="objective.html"
+       title="previous chapter">← Objective Functions</a>
+  </li>
+  <li class="next">
+    <a href="python.html"
+       title="next chapter">Python →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2023, SMDO Group.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.1.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.9.1.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

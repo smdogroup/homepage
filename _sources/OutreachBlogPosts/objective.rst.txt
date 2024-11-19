@@ -91,7 +91,7 @@ Using these sets of design variables, we can choose a couple of combinations to 
 
 From these two choices, Choice 1 is better than Choice 2 since it is six minutes faster! However, while Choice 1 is the shortest of these two options, is it truly the best? Can you find a better choice using the sets above? Click the drop down to see the answer for this example. 
 
-.. dropdown:: What is the optimal choice of design variables for this example? 
+.. dropdown:: Test Your Knowledge: What is the optimal choice of design variables for this example? 
    :icon: question
 
    Looking back at the design variable sets above, it is apparent that a choice can be made that results in a shorter amount of time than Choices 1 and 2. With this choice for the design variables, the total amount of time it would take to get to school is 13 minutes, which is the optimal time in this scenario!  

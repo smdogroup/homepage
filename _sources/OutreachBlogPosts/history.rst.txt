@@ -4,9 +4,9 @@
 .. role:: captiontext
    :class: captiontext
 
-===================
+=======================
 History of Optimization
-===================
+=======================
 
 What comes to mind when you think of the word “optimize?” 
 
