@@ -1,4 +1,9 @@
+sphinx-design
+empack
 sphinxcontrib-bibtex
 sphinxcontrib-youtube
 sphinx-press-theme
 sphinx-tabs
+jupyterlite-xeus
+# jupyterlite-sphinx
+git+https://github.com/aaronyicongfu/jupyterlite-sphinx.git@main#egg=jupyterlite-sphinx

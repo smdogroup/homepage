@@ -1,4 +1,4 @@
-name: deploy gh-pages
+name: Build and deploy webpage
 on:
   push:
     branches: [main]
@@ -10,23 +10,71 @@ on:
         description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
         required: false
         default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Install Dependencies
-      run: |
-        pip install sphinx-design
+
     - name: Checkout
       uses: actions/checkout@master
-      with:
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-    - name: Build and Commit
-      uses: sphinx-notes/pages@master
-      with:
-        documentation_path: './docs/source'
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
+
+
+    - name: Build site
+      run: |
+        source $CONDA/etc/profile.d/conda.sh;
+        echo $CONDA/bin >> $GITHUB_PATH;
+        conda create -n smdopage python=3.11
+        conda activate smdopage
+        conda install mamba=1.5.10 -c conda-forge
+        conda install libmamba -c conda-forge
+        pip install -r docs/source/requirements.txt
+        mkdir external
+        cd external
+        git clone https://github.com/smdogroup/sphinxcontrib-geogebra.git
+        cd sphinxcontrib-geogebra
+        python setup.py build
+        python setup.py install --user
+        cd ../..
+        conda --version
+        mamba --version
+        empack --version
+        sphinx-build -M html "docs/source" "docs/build"
+
+    # - name: Upload artifact
+    #   uses: actions/upload-pages-artifact@v3
+    #   with:
+    #     path: './docs/build/html'
+    #
+    - name: Push artifact to pages-artifact branch
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: pages-artifact
+        FOLDER: './docs/build/html'
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        MESSAGE: "Build: ({sha}) {msg}" # The commit message
+
+
+  # deploy:
+  #   needs: build
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #
+  #     - name: Setup Pages
+  #       uses: actions/configure-pages@v5
+  #
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v4
