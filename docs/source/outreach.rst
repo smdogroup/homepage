@@ -9,4 +9,5 @@ Here is the start of the outreach page.
 
     OutreachBlogPosts/history
     OutreachBlogPosts/objective
+    OutreachBlogPosts/formulating
     

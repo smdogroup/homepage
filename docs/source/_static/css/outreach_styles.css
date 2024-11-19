@@ -1,6 +1,20 @@
-.boldblue { color: blue;
-            font-weight: bold;
-            font-style: italic;}
+.boldblue {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
 
-.captiontext { color: black;
-               font-weight: bold;}
+.captiontext {
+    color: black;
+    font-weight: bold;
+}
+
+.analysisgreen {
+    color: #67c852;
+    font-weight: bold;
+}
+
+.optblue {
+    color: #38b4d6;
+    font-weight: bold;
+}
