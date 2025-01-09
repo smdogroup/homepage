@@ -8,6 +8,7 @@
 History of Optimization
 =======================
 
+Hello
 What comes to mind when you think of the word “optimize?” 
 
 The Merriam-Webster defines it as to make a situation or use of a resource as perfect, effective, or functional as possible.  
