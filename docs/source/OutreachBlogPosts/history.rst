@@ -32,11 +32,11 @@ From these examples and definitions, the concept of optimization can be narrowed
 
    - Making a pillow fort as big as possible with a limited number of pillows.    
 
-For a more real-life example take note of the following:   
+For a real-life example take note of the following:   
       During WWII, engineers were deciding where to add armor to planes so that they would survive attacks. Planes that returned from often had bullet holes in the fuselage and wings so one would naturally assume that is where they are most often hit and should be most protected. However, a statistician Abraham Wald disagreed, determining that the armor should be placed on the engine and nose where there were little too few bullets. Before revealing the reason, think about why Wald was correct. 
       Simply, the planes that had bullet holes in the engine and nose were getting shot down and never returned. The sample size that the engineers were looking at did not consider the planes that never survive battle.  
 
-.. figure:: images/Timeline/Surivorshipbias.svg
+.. figure:: images/Timeline/bulletholes.png
       :figwidth: 100 %
       :scale: 100 %
       :alt: Surivorship bias plane example
@@ -67,6 +67,7 @@ Although the basis of the idea of optimization is simple and almost automatic in
 The origins of optimization were put into text by Leonis Vitalyevich in 1939 with his monograph “Mathematical Methods for Organization and Planning of Production.”  
 
 However, the actual application of optimization was used on a wide scale during World War II. 
+
 .. dropdown:: Test Your Knowledge: Think about why optimization is a key tool during wars
    :icon: question
    
@@ -76,7 +77,7 @@ Optimization is an ever-growing field with numerous practical applications. A cu
 
 The idea of a fully-fledged :boldblue:`optimization problem` and :boldblue:`constraints` may seem unfamiliar at first, but we’ll delve deeper into specifics in later sections.  
 
-oday, optimization is used in a variety of fields from economics to mathematics to engineering. It stretches from how businesses operate to yield the highest profits with the lost cost margins to building faster jets that use the least amount of fuel.   
+Today, optimization is used in a variety of fields from economics to mathematics to engineering. It stretches from how businesses operate to yield the highest profits with the lost cost margins to building faster jets that use the least amount of fuel.   
 
 If you’d like to learn more about current techniques and applications of optimization, feel free to explore the other sections of this website.  
 
