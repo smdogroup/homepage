@@ -18,10 +18,11 @@ Humans have been optimizing for centuries, as it can apply to almost any situati
 Nowadays, we've moved past survival and looking more at cost efficiency in modern society.  
 
 From these examples and definitions, the concept of optimization can be narrowed down to determining the minimum (or maximum) of some set of requirements to fulfill another set of requirements.  
+
 .. dropdown:: Definition: Minimum
    :icon: light-bulb
    
-   The minimum is usually thought of as the least of something. However, the least amount of anything in the real world must be 0 since it is impossible to have a negative amount of a physical quantity. For example, the least amount of candy you can get on Halloween is zero pieces (unless you have a sneaky sibling who steals your candy). Therefore, we must place limits or constraints on our parameters to determine what a realistic minimum or maximum can be. We’ll review these concepts in more detail later
+   The minimum is usually thought of as the least of something. However, the least amount of anything in the real world must be 0 since it is impossible to have a negative amount of a physical quantity. For example, the least amount of candy you can get on Halloween is zero pieces (unless you have a sneaky sibling who steals your candy). Therefore, we must place limits or constraints on our parameters to determine what a realistic minimum or maximum can be. We’ll review these concepts in more detail later.
 
 .. dropdown:: Test Your Knowledge: Think of some ways you have potentially used optimization in your life, they don’t necessarily have to be complex situations
    :icon: question
@@ -36,13 +37,14 @@ For a real-life example take note of the following:
       During WWII, engineers were deciding where to add armor to planes so that they would survive attacks. Planes that returned from often had bullet holes in the fuselage and wings so one would naturally assume that is where they are most often hit and should be most protected. However, a statistician Abraham Wald disagreed, determining that the armor should be placed on the engine and nose where there were little too few bullets. Before revealing the reason, think about why Wald was correct. 
       Simply, the planes that had bullet holes in the engine and nose were getting shot down and never returned. The sample size that the engineers were looking at did not consider the planes that never survive battle.  
 
-.. figure:: images/Timeline/bulletholes.png
+.. figure:: images/Timeline/plane.png
       :figwidth: 100 %
-      :scale: 100 %
       :alt: Surivorship bias plane example
+      :scale: 20 %
       :align: center
 
       ..
+
 Planes that returned from battle often had bullet holes in the fuselage and wings so it was assumed that that’s where they were most often hit and should have the most protection. However, a statistician Abraham Wald disagreed, determining that the armor should be placed on the engine and nose where there were few bullet holes. Before revealing the reason, think about Wald’s reasoning.  
 
 The planes that had bullet holes in the engine and nose were getting shot down as opposed to the ones that returned. The sample size that the engineers were looking at did not consider the planes that never survived the battle. To successfully optimize, they had to expand their sample size and were then able to place armor only where it was needed. In terms of optimization, they maximized the survivability of the planes with the constraints of cost and materials.   
@@ -64,6 +66,7 @@ Although the basis of the idea of optimization is simple and almost automatic in
       :align: right
 
       ..
+
 The origins of optimization were put into text by Leonis Vitalyevich in 1939 with his monograph “Mathematical Methods for Organization and Planning of Production.”  
 
 However, the actual application of optimization was used on a wide scale during World War II. 
