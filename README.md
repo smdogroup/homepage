@@ -3,7 +3,7 @@
 This repo contains the source code for SMDO group's homepage.
 
 ## Access
-The homepage can be accessed at: [smdogroup.github.io/homepage](https://smdogroup.github.io/homepage)
+The homepage can be accessed at: [gkennedy.gatech.edu](gkennedy.gatech.edu)
 
 
 
