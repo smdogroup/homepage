@@ -13,7 +13,8 @@ Suppose you’ve gone to the store and wanted to buy as many snacks as possible 
 
 Humans have been optimizing for centuries, as it can apply to almost any situation that eases day-to-day life. The idea of optimization can be traced to older societies where efficient survival was important. This could take the form of a farmer maximizing the harvest using limited land, or a hunter minimizing exerted energy while hunting. Optimization even extends past human nature as we’ve discovered that plants and animals also try to find the best approach to achieving a task. Take a look at the video below to get an idea of how optimization exists even in nature.  
 
-[![HyzT5b0tNtk](https://img.youtube.com/vi/HyzT5b0tNtk/0.jpg)](https://www.youtube.com/watch?v=HyzT5b0tNtk)
+.. youtube:: HyzT5b0tNtk
+   :align: center
 
 Nowadays, we've moved past survival and looking more at cost efficiency in modern society.  
 
@@ -33,6 +34,7 @@ From these examples and definitions, the concept of optimization can be narrowed
 
    - Making a pillow fort as big as possible with a limited number of pillows.    
 
+.. QUESTION: how do we want this to appear on the website
 For a real-life example take note of the following:   
       During WWII, engineers were deciding where to add armor to planes so that they would survive attacks. Planes that returned from often had bullet holes in the fuselage and wings so one would naturally assume that is where they are most often hit and should be most protected. However, a statistician Abraham Wald disagreed, determining that the armor should be placed on the engine and nose where there were little too few bullets. Before revealing the reason, think about why Wald was correct. 
       Simply, the planes that had bullet holes in the engine and nose were getting shot down and never returned. The sample size that the engineers were looking at did not consider the planes that never survive battle.  
@@ -43,27 +45,22 @@ For a real-life example take note of the following:
       :scale: 20 %
       :align: center
 
+      :captiontext:`NEED TO INSERT CAPTION AND CITE SOURCE`
+
       ..
 
 Planes that returned from battle often had bullet holes in the fuselage and wings so it was assumed that that’s where they were most often hit and should have the most protection. However, a statistician Abraham Wald disagreed, determining that the armor should be placed on the engine and nose where there were few bullet holes. Before revealing the reason, think about Wald’s reasoning.  
 
 The planes that had bullet holes in the engine and nose were getting shot down as opposed to the ones that returned. The sample size that the engineers were looking at did not consider the planes that never survived the battle. To successfully optimize, they had to expand their sample size and were then able to place armor only where it was needed. In terms of optimization, they maximized the survivability of the planes with the constraints of cost and materials.   
 
-Although the basis of the idea of optimization is simple and almost automatic in human nature, it is difficult to precisely say when the concept was fully realized as a mathematical application. It can be traced back to as early as the Greeks with Archimedes finding the max of a parabola. Others give credit to Newton for his study of minimal resistance in which he sought a shape that minimized drag with potential applications to ship designs.  
+Although the basis of the idea of optimization is simple and almost automatic in human nature, it is difficult to precisely say when the concept was fully realized as a mathematical application. It can be traced back to as early as the Greeks with Archimedes finding the max of a parabola. Others give credit to Sir Isaac Newton for his study of minimal resistance in which he sought a shape that minimized drag with potential applications to ship designs.  
 
-.. figure:: images/Timeline/archimedes.avif
-      :figwidth: 100 %
-      :scale: 100 %
-      :alt: archimedes
-      :align: left
+.. figure:: images/Timeline/Combined_People.png
+      :width: 800px
+      :alt: Images of Archimedes (left) and Sir Isaac Newton (right)
+      :align: center
 
-      ..
-
-.. figure:: images/Timeline/Newton.jpeg
-      :figwidth: 100 %
-      :scale: 100 %
-      :alt: Newton
-      :align: right
+      :captiontext:`NEED TO INSERT CAPTION AND LINK IMAGE CREDITS`
 
       ..
 
@@ -85,10 +82,11 @@ Today, optimization is used in a variety of fields from economics to mathematics
 If you’d like to learn more about current techniques and applications of optimization, feel free to explore the other sections of this website.  
 
    .. figure:: images/Timeline/Timeline.png
-      :figwidth: 100 %
-      :scale: 100 %
-      :alt: optimal choice of design variables for example problem
+      :width: 500px
+      :alt: timeline for the history of optimization
       :align: center
+
+      :captiontext:`NEED TO INSERT CAPTION`
 
       ..
 
