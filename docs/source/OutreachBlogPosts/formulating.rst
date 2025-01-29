@@ -74,8 +74,10 @@ Rocket to International Space Station
     :figwidth: 100 %
     :alt: SpaceX Dragon capsule docking with the International Space Station
     :align: center
+    :target: https://www.cnn.com/2019/03/03/tech/spacex-crew-dragon-docking-international-space-station/index.html
 
-    :captiontext:`SpaceX Dragon Capsule Docking with the International Space Station (Credit - SpaceX/NASA)`
+    :captiontext:`SpaceX Dragon Capsule Docking with the International Space Station (Credit - SpaceX/NASA [1])`
+
 
 Consider that you are an engineer working for a space company tasked with designing a new rocket to carry cargo, such as food and science experiments, to the International Space Station (ISS). Launching rockets and sending supplies to the ISS is expensive, so as an engineer your objective is to maximize the cargo weight that you can carry for a single mission. There are also some constraints that you will have to consider, such as a minimum value possible for the volume that the cargo occupies on the rocket and the efficiency of the fuel that is used. Then, if you are working on designing the space capsule, the design variables, :math:`x`, that you may have control over include the shape of the capsule and some of the materials used. This forms the core of your optimization problem for maximizing the cargo sent to the ISS! Mathematically, this might be represented as the following, where the vertical dots indicate that there are other constraints that could be considered.
 
@@ -119,8 +121,9 @@ Traffic Junction Design
     :scale: 50 %
     :alt: Golden Gate bridge in San Francisco
     :align: center
+    :target: https://www.cnn.com/travel/article/most-amazing-bridges/index.html
 
-    :captiontext:`Golden Gate Bridge in San Francisco`
+    :captiontext:`Golden Gate Bridge in San Francisco (Credit - CNN [2])`
 
 One final example to consider is that you are a civil engineer trying to design a new traffic junction over a river. Since the vehicles must travel over water, you need to design a bridge with the objective of maximizing traffic flow. While adding many lanes would help with traffic flow, you have a strict budget, or monetary constraint. Additionally, you must ensure that the bridge is capable of holding a minimum weight in case there is a traffic jam. This adds an additional structural constraint where the load of the cars on the bridge must be less than or equal to a maximum allowable load. Your design variables in this instance would then be the number of lanes, the geometry of the bridge, and the materials that you use. If you have ever heard of the video game Poly Bridge, this concept might sound familiar! 
 
@@ -135,5 +138,10 @@ One final example to consider is that you are a civil engineer trying to design 
 
 To learn more about how to perform optimization on your own numerical problems and utilize the concepts you have learned in this introductory section, keep reading the following sections to see optimization in action!
 
+----------------
+Image References
+----------------
 
+[1] `SpaceX Dragon Capsule Docking <https://www.cnn.com/2019/03/03/tech/spacex-crew-dragon-docking-international-space-station/index.html>`_
 
+[2] `Golden Gate Bridge <https://www.cnn.com/travel/article/most-amazing-bridges/index.html>`_
