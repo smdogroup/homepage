@@ -95,8 +95,12 @@ If you’d like to learn more about current techniques and applications of optim
 References
 
 [1] Youtube BBC News
+
 [2] Wikipedia
-[3] Biograpgy
+
+[3] Biography
+
 [4] Wikipedia
+
 
 
