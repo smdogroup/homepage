@@ -45,7 +45,7 @@ For a real-life example take note of the following:
       :scale: 20 %
       :align: center
 
-      :captiontext:`NEED TO INSERT CAPTION AND CITE SOURCE`
+      :captiontext:`Distribution of where planes that returned typically had bullet holes. Credit Wikipedia`
 
       ..
 
@@ -60,7 +60,7 @@ Although the basis of the idea of optimization is simple and almost automatic in
       :alt: Images of Archimedes (left) and Sir Isaac Newton (right)
       :align: center
 
-      :captiontext:`NEED TO INSERT CAPTION AND LINK IMAGE CREDITS`
+      :captiontext:`Left Archimedes Credit Getty Images. Right Isaac Newton Credit Wikipedia`
 
       ..
 
@@ -81,12 +81,12 @@ Today, optimization is used in a variety of fields from economics to mathematics
 
 If you’d like to learn more about current techniques and applications of optimization, feel free to explore the other sections of this website.  
 
-   .. figure:: images/Timeline/Timeline.png
+   .. figure:: images/Timeline/TimelineTNR.png
       :width: 500px
       :alt: timeline for the history of optimization
       :align: center
 
-      :captiontext:`NEED TO INSERT CAPTION`
+      :captiontext:`Chronological Timeline of critical events in optimization history`
 
       ..
 
