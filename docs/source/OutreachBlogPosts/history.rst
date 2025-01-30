@@ -92,7 +92,7 @@ If you’d like to learn more about current techniques and applications of optim
 
       ..
 
-Key Takeaways:
+References:
 ```````````````
 
 [1] Youtube BBC News
