@@ -60,7 +60,6 @@ Although the basis of the idea of optimization is simple and almost automatic in
       :width: 800px
       :alt: Images of Archimedes (left) and Sir Isaac Newton (right)
       :align: center
-      :target: https://www.biography.com/scholars-educators/a43249494/who-discovered-pi-archimedes-of-syracuse
       
       :captiontext:`Left Archimedes (Credit Getty Images [3]). Right Isaac Newton (Credit Wikipedia [4])`
 
@@ -95,13 +94,13 @@ If you’d like to learn more about current techniques and applications of optim
 References:
 ```````````````
 
-[1] Youtube BBC News
+[1] `YouTube BBC News <https://www.youtube.com/watch?v=HyzT5b0tNtk&t=1s>`_
 
-[2] Wikipedia
+[2] `Surivorship Bias Plane <https://en.wikipedia.org/wiki/Survivorship_bias>`_
 
-[3] Biography
+[3] `Archimedes <https://www.biography.com/scholars-educators/a43249494/who-discovered-pi-archimedes-of-syracuse>`_
 
-[4] Wikipedia
+[4] `Isaac Newton <https://en.wikipedia.org/wiki/Isaac_Newton>`_
 
 
 
