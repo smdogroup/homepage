@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.7ea541fa0541d709e676.js",
+        "load": "static/remoteEntry.72588fc41601278b0ab3.js",
         "name": "@jupyterlite/xeus-extension"
       },
       {
