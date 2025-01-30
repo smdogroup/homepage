@@ -1,8 +1,15 @@
-========
-Outreach
-========
+=========================================
+Outreach - Optimization through Intuition
+=========================================
 
-Here is the start of the outreach page.
+Welcome to the SMDO Outreach landing page! This purpose of this section of the website is to provide a set of modules in the form of blog posts that can be used to learn about optimization using your intuition. If you have never been introduced to optimization before or have only been exposed at a cursory level, we believe that the following pages will help you begin to learn the field. The primary target audience for this material is middle and high school students, and significant effort has been placed in writing the content in a manner that is easily understandable.
+This initiative is still actively under development, so please check back in the future for additional posts! 
+
+----------------------------
+Fundamentals of Optimization
+----------------------------
+
+This first set of posts serves as a preliminary introduction to optimization, including a brief history of the discipline and explanations about design variables, constraints, and objective functions.
 
 .. toctree::
     :maxdepth: 1
@@ -12,7 +19,7 @@ Here is the start of the outreach page.
     OutreachBlogPosts/constraints
     OutreachBlogPosts/formulating
     
-Here is an in-browser python environment where you can test your favorate
+Here is an in-browser python environment where you can test your favorite
 python code live!
 
 .. toctree::

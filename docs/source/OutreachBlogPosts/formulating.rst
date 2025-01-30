@@ -142,6 +142,8 @@ To learn more about how to perform optimization on your own numerical problems a
 Image References
 ----------------
 
+.. TODO: update the image citation to be real citations
+
 [1] `SpaceX Dragon Capsule Docking <https://www.cnn.com/2019/03/03/tech/spacex-crew-dragon-docking-international-space-station/index.html>`_
 
 [2] `Golden Gate Bridge <https://www.cnn.com/travel/article/most-amazing-bridges/index.html>`_
