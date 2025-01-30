@@ -44,8 +44,9 @@ For a real-life example take note of the following:
       :alt: Surivorship bias plane example
       :scale: 20 %
       :align: center
+      :target: https://en.wikipedia.org/wiki/Survivorship_bias
 
-      :captiontext:`Distribution of where planes that returned typically had bullet holes. Credit Wikipedia`
+      :captiontext:`Distribution of where planes that returned typically had bullet holes. (Credit Wikipedia [2])`
 
       ..
 
@@ -59,8 +60,9 @@ Although the basis of the idea of optimization is simple and almost automatic in
       :width: 800px
       :alt: Images of Archimedes (left) and Sir Isaac Newton (right)
       :align: center
-
-      :captiontext:`Left Archimedes Credit Getty Images. Right Isaac Newton Credit Wikipedia`
+      :target: https://www.biography.com/scholars-educators/a43249494/who-discovered-pi-archimedes-of-syracuse
+      
+      :captiontext:`Left Archimedes (Credit Getty Images [3]). Right Isaac Newton (Credit Wikipedia [4])`
 
       ..
 
@@ -90,5 +92,11 @@ If you’d like to learn more about current techniques and applications of optim
 
       ..
 
+References
+
+[1] Youtube BBC News
+[2] Wikipedia
+[3] Biograpgy
+[4] Wikipedia
 
 
