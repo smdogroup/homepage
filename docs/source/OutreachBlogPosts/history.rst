@@ -44,8 +44,9 @@ For a real-life example take note of the following:
       :alt: Surivorship bias plane example
       :scale: 20 %
       :align: center
+      :target: https://en.wikipedia.org/wiki/Survivorship_bias
 
-      :captiontext:`NEED TO INSERT CAPTION AND CITE SOURCE`
+      :captiontext:`Distribution of where planes that returned typically had bullet holes. (Credit Wikipedia [2])`
 
       ..
 
@@ -59,8 +60,8 @@ Although the basis of the idea of optimization is simple and almost automatic in
       :width: 800px
       :alt: Images of Archimedes (left) and Sir Isaac Newton (right)
       :align: center
-
-      :captiontext:`NEED TO INSERT CAPTION AND LINK IMAGE CREDITS`
+      
+      :captiontext:`Left Archimedes (Credit Getty Images [3]). Right Isaac Newton (Credit Wikipedia [4])`
 
       ..
 
@@ -81,14 +82,25 @@ Today, optimization is used in a variety of fields from economics to mathematics
 
 If you’d like to learn more about current techniques and applications of optimization, feel free to explore the other sections of this website.  
 
-   .. figure:: images/Timeline/Timeline.png
+   .. figure:: images/Timeline/TimelineTNR.png
       :width: 500px
       :alt: timeline for the history of optimization
       :align: center
 
-      :captiontext:`NEED TO INSERT CAPTION`
+      :captiontext:`Chronological Timeline of critical events in optimization history`
 
       ..
+
+References:
+```````````````
+
+[1] `YouTube BBC News <https://www.youtube.com/watch?v=HyzT5b0tNtk&t=1s>`_
+
+[2] `Surivorship Bias Plane <https://en.wikipedia.org/wiki/Survivorship_bias>`_
+
+[3] `Archimedes <https://www.biography.com/scholars-educators/a43249494/who-discovered-pi-archimedes-of-syracuse>`_
+
+[4] `Isaac Newton <https://en.wikipedia.org/wiki/Isaac_Newton>`_
 
 
 
