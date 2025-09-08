@@ -116,16 +116,18 @@ Cameron's research focus was in multi-fidelity structural modeing for unmanned a
    - `GitHub <https://github.com/csmith763>`_
    - `Linkedin <https://www.linkedin.com/in/cameron-smith01/>`_
 
-Lonnie Webb, 2023 - present
----------------------------
+Seiyon Arulampalam, 2023 - present
+---------------------------------
 
-.. image:: images/people/Lonnie.png
+.. image:: images/people/Seiyon.jpg
    :width: 120 px
    :align: right
 
-Lonnie Webb is currently an M.S. student in Aerospace Engineering at the Georgia Institute of Technology, where he also earned his B.S. in AE.
-During an internship at NASA Marshall Space Flight Center, he gained hands-on experience in fatigue and structural analysis of additively manufactured components.
-His academic and professional interests revolve around structural optimization, structural analysis, and additive manufacturing for aerospace applications.
+
+Seiyon Arulampalam is a Ph.D. student in Aerospace Engineering at the Georgia Institute of Technology. He holds an Aeronautical Engineering degree from Rensselaer Polytechnic Institute and is interested in multidisciplinary optimization problems for novel aircraft configurations.  His current research project involves developing a high-fidelity coupled electromagnetic-thermal finite element toolkit for shape optimization of electric motors.
+
+- External links:
+   - `Linkedin <https://www.linkedin.com/in/seiyon-arulampalam-a42282358/>`_
 
 Previous Students
 =================
@@ -141,6 +143,7 @@ Ph.D. Alumni
 
 M.S. Alumni
 -----------
+- Lonnie Webb, 2023
 - Rohan Patel, 2022
 - Sejal Sahu, 2022
 - Lenard Halim, 2021
